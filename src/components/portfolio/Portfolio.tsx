@@ -44,15 +44,14 @@ const Portfolio = () => {
   useEffect(() => {
     const el = pRef.current;
     const scrollLength = el.scrollWidth - window.innerWidth;
-    return () => {
-      gsap.to(".grid-wrapper", {
-        x: -scrollLength,
-        duration: 20,
-        repeat: -1,
-        yoyo: true,
-        ease: "none",
-      });
-    };
+
+    gsap.to(".grid-wrapper", {
+      x: -scrollLength,
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
   }, []);
 
   // useEffect(() => {
