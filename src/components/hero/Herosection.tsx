@@ -19,14 +19,14 @@ const Herosection = () => {
         end: "+=2000",
         scrub: 1,
         pin: true,
-        // markers: true,
+        markers: true,
       },
     });
 
     tl.fromTo(".bgfont", { scale: 27 }, { scale: 1, ease: "power2.out" }, 0).to(
       ".bgfont",
       {},
-      0.7
+      0.9
     );
   }, []);
 
