@@ -16,18 +16,17 @@ const Herosection = () => {
       scrollTrigger: {
         trigger: ".hero-container",
         start: "top top",
-        end: "+=2000", // Total scroll distance
+        end: "+=2000",
         scrub: 1,
         pin: true,
         // markers: true,
       },
     });
 
-    // Scale animation from 27 to 1 during the first 90% of scroll
     tl.fromTo(".bgfont", { scale: 27 }, { scale: 1, ease: "power2.out" }, 0).to(
       ".bgfont",
       {},
-      0.9 // maintain final state at 90% till end
+      0.7
     );
   }, []);
 
