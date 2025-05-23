@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'megazoid';
+  src: url('../../assets/font/megazoid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contact-section {
+  padding: 6rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-line {
+  width: 1px;
+  height: 60px;
+  background-color: #333;
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #e7dfd3;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: 'megazoid';
+
+}
+
+.contact-description {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  font-weight: medium;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: medium;
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+}
+
+.contact-button .arrow {
+  margin-left: 0.5rem;
+  color: #d4ff4f;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-button:hover .arrow {
+  transform: translateX(5px);
+}

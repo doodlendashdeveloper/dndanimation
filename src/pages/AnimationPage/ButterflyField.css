@@ -1,0 +1,50 @@
+
+.butterfly-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.butterfly-wrapper {
+  position: absolute;
+ 
+  animation: flyWrapper 10s infinite ease-in-out;
+}
+
+.butterfly {
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, white 0%, #ffeb3b 50%, rgba(255, 255, 0, 0.82) 100%);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(45deg);
+  filter: blur(3px);
+  animation: flutter 3s ease-in-out infinite alternate;
+}
+
+/* Move the wrapper up and down */
+@keyframes flyWrapper {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes flutter {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.1);
+  }
+}

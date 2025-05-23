@@ -1,0 +1,47 @@
+.hero-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.mask {
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  mix-blend-mode: screen;
+  position: relative;
+}
+
+.mask .mypng {
+  width: 30rem;
+  position: absolute;
+  transform-origin: center center;
+}
+.bgfont {
+  font-size: 30rem;
+  color: rgb(0, 0, 0);
+  transform-origin: center center;
+  margin: 0;
+  font-family: "antique";
+  position: absolute;
+}
+.hero-container .springyvid {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+.hero-container video {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,167 @@
+/* Fullscreen layout with white background */
+.home-top-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered aura + character container */
+.aura-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vmin;
+  height: 100vmin;
+  max-width: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Aura circles (from inner to outer) */
+.aura {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* #FFF97B inner */
+.aura-1 {
+  width: 40vmin;
+  height: 40vmin;
+  background-color: #FFF97B;
+  z-index: 1;
+}
+
+/* #F8ED00 middle */
+.aura-2 {
+  width: 70vmin;
+  height: 70vmin;
+  background-color: #F8ED00;
+  z-index: 0;
+}
+
+/* #DCD300 outer */
+.aura-3 {
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #DCD300;
+  z-index: -1;
+}
+
+/* Character image on top of all */
+.character {
+  position: absolute;
+  width: auto;
+  height: 40%;
+  z-index: 2;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Simple bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+/* Aura pulse effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+/* Shared aura base styles */
+.aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.3);
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+/* Aura 1 - inner ring */
+.aura-1 {
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #FFF97B;
+  animation: pulseSmall 4s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+/* Aura 2 - middle ring */
+.aura-2 {
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #F8ED00;
+  animation: pulseMedium 4s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+/* Aura 3 - outer ring */
+.aura-3 {
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #DCD300;
+  animation: pulseLarge 4s ease-in-out infinite;
+  animation-delay: 10s;
+}
+
+/* Animation for inner aura */
+@keyframes pulseSmall {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+   
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+
+/* Animation for middle aura */
+@keyframes pulseMedium {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+}
+
+/* Animation for outer aura */
+@keyframes pulseLarge {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(2.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+  }
+}

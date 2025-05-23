@@ -1,0 +1,32 @@
+.animation-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* adjust the height as needed */
+  overflow: hidden;
+}
+
+.circle-image {
+  position: absolute;
+ 
+  background-size: cover;
+  background-position: center;
+  /* top:-150%; */
+  pointer-events: none; /* allows the cursor to pass through */
+}
+.fullscreen-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; /* middle layer, above circle, below text */
+  pointer-events: none;
+}.color-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 0, 210, 0.3); /* pinkish tint — change as you want */
+  pointer-events: none;
+  z-index: 2; /* above the image and circle */
+  height: 100vh;
+}
+
