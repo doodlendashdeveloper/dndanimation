@@ -1,7 +1,7 @@
-.bannerthree {
+.bannerfive {
   width: 100%;
   height: 100vh;
 }
-.scene2 {
+.bannerfive .scene2 {
   object-fit: cover;
 }

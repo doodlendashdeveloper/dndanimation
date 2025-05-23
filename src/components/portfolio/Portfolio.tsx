@@ -43,9 +43,12 @@ const Portfolio = () => {
 
   useEffect(() => {
     const el = pRef.current;
+
+    if (!el) return;
+
     const scrollLength = el.scrollWidth - window.innerWidth;
 
-    gsap.to(".grid-wrapper", {
+    gsap.to(el, {
       x: -scrollLength,
       duration: 20,
       repeat: -1,

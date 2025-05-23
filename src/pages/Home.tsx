@@ -4,7 +4,7 @@ import AnimationPage from "./AnimationPage/AnimationPage.tsx";
 import ContactUs from "./contact/ContactUs.tsx";
 import Footer from "./footer/Footer.tsx";
 import Banner from "../components/banners/banner-one/Banner.tsx";
-import BannerTwo from "../components/banners/banner-two/BannerTwo.tsx";
+// import BannerTwo from "../components/banners/banner-two/BannerTwo.tsx";
 import LetsTalk from "./letstalk/LetsTalk.tsx";
 // import HomeTopSection from "../components/HomeTopSection.tsx";
 // import Video from "../../src/assets/videos/video.mp4";
@@ -19,7 +19,7 @@ const Home = () => {
       {/* <HomeTopSection image={Video} /> */}
       <Herosection />
       <Bannerfour />
-      <BannerTwo />
+      {/* <BannerTwo /> */}
 
       {/* <BannerThree /> */}
       <AnimationPage />

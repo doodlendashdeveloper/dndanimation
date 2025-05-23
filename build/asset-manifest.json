@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.bf8df17c.css",
-    "main.js": "./static/js/main.28ba443f.js",
+    "main.css": "./static/css/main.f69e6c35.css",
+    "main.js": "./static/js/main.232ba825.js",
     "static/js/453.2c6ecf02.chunk.js": "./static/js/453.2c6ecf02.chunk.js",
     "static/media/scene2.mp4": "./static/media/scene2.4b7cad0ee24876e66698.mp4",
     "static/media/jungle.gif": "./static/media/jungle.ca6ebb5ca2e202f0ee3b.gif",
@@ -16,7 +16,6 @@
     "static/media/s4.png": "./static/media/s4.2d9fc39773e09f65bb03.png",
     "static/media/s5.png": "./static/media/s5.6b7d5533915b7e20b0e9.png",
     "static/media/b5.png": "./static/media/b5.1b43d710a8b8bc0d610e.png",
-    "static/media/ring.png": "./static/media/ring.df26cbdae5ce42769f64.png",
     "static/media/p4.png": "./static/media/p4.bfaac0fffd2770122507.png",
     "static/media/s1.png": "./static/media/s1.e38c312f72c6383f41fa.png",
     "static/media/s8.png": "./static/media/s8.13fe45856edd6ee36788.png",
@@ -42,12 +41,12 @@
     "static/media/Fontspring-DEMO-organetto-ultracndultrabold.otf": "./static/media/Fontspring-DEMO-organetto-ultracndultrabold.d239d91e5f45200452d6.otf",
     "static/media/portfolio.png": "./static/media/portfolio.c9aa2554d797dc6f0ddd.png",
     "index.html": "./index.html",
-    "main.bf8df17c.css.map": "./static/css/main.bf8df17c.css.map",
-    "main.28ba443f.js.map": "./static/js/main.28ba443f.js.map",
+    "main.f69e6c35.css.map": "./static/css/main.f69e6c35.css.map",
+    "main.232ba825.js.map": "./static/js/main.232ba825.js.map",
     "453.2c6ecf02.chunk.js.map": "./static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf8df17c.css",
-    "static/js/main.28ba443f.js"
+    "static/css/main.f69e6c35.css",
+    "static/js/main.232ba825.js"
   ]
 }
