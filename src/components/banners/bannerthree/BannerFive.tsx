@@ -1,8 +1,8 @@
 import React from "react";
-import "./bannerthree.css";
+import "./bannerfive.css";
 import scene2 from "../../../assets/videos/scene2.mp4";
 
-const Bannerthree = () => {
+const BannerFive = () => {
   return (
     <div className="bannerthree">
       <video className="scene2" width="100%" height="100%" loop autoPlay muted>
@@ -12,4 +12,4 @@ const Bannerthree = () => {
   );
 };
 
-export default Bannerthree;
+export default BannerFive;

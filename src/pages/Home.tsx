@@ -10,7 +10,7 @@ import LetsTalk from "./letstalk/LetsTalk.tsx";
 // import Video from "../../src/assets/videos/video.mp4";
 import Portfolio from "../components/portfolio/Portfolio.tsx";
 import Herosection from "../components/hero/Herosection.tsx";
-import Bannerthree from "../components/banners/bannerthree/Bannerthree.tsx";
+import Bannerfive from "../components/banners/bannerthree/BannerFive.tsx";
 import Bannerfour from "../components/banners/bannerfour/Bannerfour.tsx";
 // import BannerThree from "../components/banners/banner-three/BannerThree.tsx";
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       {/* <BannerThree /> */}
       <AnimationPage />
       <Banner />
-      <Bannerthree />
+      <Bannerfive />
 
       <Portfolio />
 
