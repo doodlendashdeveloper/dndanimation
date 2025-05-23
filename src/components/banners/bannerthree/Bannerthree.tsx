@@ -1,0 +1,15 @@
+import React from "react";
+import "./bannerthree.css";
+import scene2 from "../../../assets/videos/scene2.mp4";
+
+const Bannerthree = () => {
+  return (
+    <div className="bannerthree">
+      <video className="scene2" width="100%" height="100%" loop autoPlay muted>
+        <source src={scene2} type="video/mp4" />
+      </video>
+    </div>
+  );
+};
+
+export default Bannerthree;

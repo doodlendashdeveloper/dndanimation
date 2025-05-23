@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router basename="/dndanimation/build">
+    <Router basename="/dndamimation/build">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
