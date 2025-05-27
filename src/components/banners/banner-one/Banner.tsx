@@ -5,17 +5,28 @@ import Splash from "../../../assets/images/splash.png";
 import "./Banner.css";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // import gsap from "gsap";
+import useWindowDimensions from "../../useWindowDimensions.tsx";
 
 const Banner = () => {
   const constraintsRef = useRef(null);
+  const { width, height } = useWindowDimensions();
+  const [Secheight, setSecheight] = useState(800);
+  useEffect(() => {
+    console.log("prev height", Secheight);
 
-  // Motion values for x, y, and rotation
+    const timer = setTimeout(() => {
+      setSecheight((prevHeight) => prevHeight - 1);
+      // console.log("height effexted", Secheight);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  // Generate rotation from x and y
   const rotate = useTransform([x, y], ([latestX, latestY]) => {
-    return (latestX + latestY) * 0.3; // tweak multiplier for feel
+    return (latestX + latestY) * 0.3;
   });
 
   const [ready, setReady] = useState(false);
@@ -46,7 +57,11 @@ const Banner = () => {
   // }, []);
 
   return (
-    <motion.div ref={constraintsRef} className="banner-text-wrapper">
+    <motion.div
+      ref={constraintsRef}
+      style={{ height: `${height}px` }}
+      className="banner-text-wrapper"
+    >
       <img src={Splash} className="build-image" />
       <div className="text-wrapper">
         <div className="first-line">

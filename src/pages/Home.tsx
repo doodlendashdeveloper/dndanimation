@@ -2,7 +2,8 @@
 
 import AnimationPage from "./AnimationPage/AnimationPage.tsx";
 import ContactUs from "./contact/ContactUs.tsx";
-import Footer from "./footer/Footer.tsx";
+// import Footer from "./footer/Footer.tsx";
+import Footertwo from "../components/footertwo/Footertow.tsx";
 import Banner from "../components/banners/banner-one/Banner.tsx";
 // import BannerTwo from "../components/banners/banner-two/BannerTwo.tsx";
 import LetsTalk from "./letstalk/LetsTalk.tsx";
@@ -13,6 +14,7 @@ import Herosection from "../components/hero/Herosection.tsx";
 import Bannerfive from "../components/banners/bannerthree/BannerFive.tsx";
 import Bannerfour from "../components/banners/bannerfour/Bannerfour.tsx";
 // import BannerThree from "../components/banners/banner-three/BannerThree.tsx";
+import IdeasToLife from "../components/ideas-to-life/IdeasToLife.tsx";
 const Home = () => {
   return (
     <div>
@@ -22,16 +24,18 @@ const Home = () => {
       {/* <BannerTwo /> */}
 
       {/* <BannerThree /> */}
+
       <AnimationPage />
       <Banner />
+      <IdeasToLife />
       <Bannerfive />
-
       <Portfolio />
 
       <LetsTalk />
       <ContactUs />
 
-      <Footer />
+      {/* <Footer /> */}
+      <Footertwo />
     </div>
   );
 };

@@ -17,6 +17,30 @@
 }
 
 @font-face {
+  font-family: "Pantonlight";
+  src: url("../src/assets/font/panton/PantonDemoLight.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pantonbold";
+  src: url("../src/assets/font/panton/PantonDemoBlack.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PathwayGothicOne";
+  src: url("../src/assets/font/PathwayGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "fs-bold";
   src: url("../src/assets/font/Fontspring-DEMO-organetto-bold.otf")
     format("truetype");

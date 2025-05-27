@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.26068cf2.css",
-    "main.js": "./static/js/main.eec77db9.js",
+    "main.css": "./static/css/main.f05221e5.css",
+    "main.js": "./static/js/main.42c2b8a3.js",
     "static/js/453.2c6ecf02.chunk.js": "./static/js/453.2c6ecf02.chunk.js",
     "static/media/the-guns.mp4": "./static/media/the-guns.4575856dc0deff0edd83.mp4",
     "static/media/jungle.gif": "./static/media/jungle.ca6ebb5ca2e202f0ee3b.gif",
@@ -10,11 +10,13 @@
     "static/media/pizzareplace.mp4": "./static/media/pizzareplace.c4832de00a982c99c34d.mp4",
     "static/media/pizza2replace.mp4": "./static/media/pizza2replace.4bb92486ec252b8d63ac.mp4",
     "static/media/overdosereplace.mp4": "./static/media/overdosereplace.9756f92ac408b22a0d81.mp4",
+    "static/media/ideastolife.mp4": "./static/media/ideastolife.4d9b2084c8af27ed4018.mp4",
     "static/media/springy.mp4": "./static/media/springy.b929527eb833dc010f96.mp4",
     "static/media/revolution.mp4": "./static/media/revolution.75fac2e82885d4821647.mp4",
     "static/media/s7.png": "./static/media/s7.01c64736135ee6f72dad.png",
     "static/media/s4.png": "./static/media/s4.2d9fc39773e09f65bb03.png",
     "static/media/s5.png": "./static/media/s5.6b7d5533915b7e20b0e9.png",
+    "static/media/footerlogo.png": "./static/media/footerlogo.d863db6db66bb2c12be5.png",
     "static/media/b5.png": "./static/media/b5.1b43d710a8b8bc0d610e.png",
     "static/media/p4.png": "./static/media/p4.bfaac0fffd2770122507.png",
     "static/media/s1.png": "./static/media/s1.e38c312f72c6383f41fa.png",
@@ -33,6 +35,9 @@
     "static/media/splash.png": "./static/media/splash.f8a85a281af3cac65aac.png",
     "static/media/spark_light.png": "./static/media/spark_light.af072d915545aba7510d.png",
     "static/media/megazoid.ttf": "./static/media/megazoid.050d71e38479361d292f.ttf",
+    "static/media/PantonDemoLight.otf": "./static/media/PantonDemoLight.602ae56f65da8c004484.otf",
+    "static/media/PantonDemoBlack.otf": "./static/media/PantonDemoBlack.aa32031e38ad5621ee48.otf",
+    "static/media/PathwayGothicOne-Regular.ttf": "./static/media/PathwayGothicOne-Regular.c8e97e79417d26f2c08e.ttf",
     "static/media/Antique Olive Compact Regular.ttf": "./static/media/Antique Olive Compact Regular.6b7e301db8cbfb0041d5.ttf",
     "static/media/s3.png": "./static/media/s3.0a8027ba51b0628aa35f.png",
     "static/media/portfolio2025.png": "./static/media/portfolio2025.c8c0fa8f18930781a63e.png",
@@ -41,12 +46,12 @@
     "static/media/Fontspring-DEMO-organetto-ultracndultrabold.otf": "./static/media/Fontspring-DEMO-organetto-ultracndultrabold.d239d91e5f45200452d6.otf",
     "static/media/portfolio.png": "./static/media/portfolio.c9aa2554d797dc6f0ddd.png",
     "index.html": "./index.html",
-    "main.26068cf2.css.map": "./static/css/main.26068cf2.css.map",
-    "main.eec77db9.js.map": "./static/js/main.eec77db9.js.map",
+    "main.f05221e5.css.map": "./static/css/main.f05221e5.css.map",
+    "main.42c2b8a3.js.map": "./static/js/main.42c2b8a3.js.map",
     "453.2c6ecf02.chunk.js.map": "./static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26068cf2.css",
-    "static/js/main.eec77db9.js"
+    "static/css/main.f05221e5.css",
+    "static/js/main.42c2b8a3.js"
   ]
 }

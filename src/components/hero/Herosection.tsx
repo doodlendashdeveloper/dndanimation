@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import bannervideo from "../../assets/videos/video.mp4";
 // import springy from "../../assets/videos/springy.mp4";
-import mypng from "../../assets/images/mypng.png";
+// import mypng from "../../assets/images/mypng.png";
 import "./hero.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -23,10 +23,11 @@ const Herosection = () => {
       },
     });
 
-    tl.fromTo(".bgfont", { scale: 27 }, { scale: 1, ease: "power2.out" }, 0).to(
+    tl.fromTo(
       ".bgfont",
-      {},
-      0.9
+      { scale: 27 },
+      { scale: 1, ease: "power2.out", duration: 1 },
+      0.2
     );
   }, []);
 

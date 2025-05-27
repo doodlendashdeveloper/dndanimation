@@ -6,6 +6,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  background-color: white;
+  z-index: 2;
 }
 .h1,
 h1 {

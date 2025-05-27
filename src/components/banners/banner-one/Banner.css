@@ -14,6 +14,7 @@
   font-size: 28rem;
   font-weight: bold;
   background-image: url("../../../assets/images/spark_light.png");
+
   background-size: cover;
   background-position: inherit;
   background-repeat: repeat;
@@ -40,13 +41,13 @@
 
 .banner-text-wrapper {
   width: 100%;
-  height: 1000px;
   background-color: red;
   overflow: hidden;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: center;
+  z-index: 2;
 }
 
 .dice-left {
@@ -62,8 +63,8 @@
 .dice-right {
   width: 15rem;
   position: absolute;
-  top: 0;
-  left: 18%;
+  left: 78%;
+  top: 54%;
 }
 /* .dice-right {
   position: absolute;

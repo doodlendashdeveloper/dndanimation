@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   background: #096f7b;
+  z-index: 2;
 
   /* padding-right: 50px; */
 }
