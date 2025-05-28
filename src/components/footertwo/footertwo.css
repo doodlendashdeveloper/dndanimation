@@ -3,14 +3,15 @@
 }
 .footertwo p {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "pantonlight";
+  font-weight: 400;
 }
 .footertwo a {
   text-decoration: none !important;
-  color: black;
+  color: white;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "pantonlight";
   cursor: pointer;
   position: relative;
@@ -33,17 +34,19 @@
   pointer-events: none;
 }
 .sticky-footer {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   position: sticky;
   bottom: 0;
-  background-color: #ffda3a;
+  background-color: #0042ff;
   z-index: 1;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .footertwo {
   padding: 20px 100px;
+  color: white;
 }
 .footertwo .main-footertwo {
   display: flex;
@@ -60,18 +63,20 @@ ul li p {
 .footertwo .footertwo-bottom {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 .footertwo .footertwo-bottom .copyright-links p {
   margin: 0;
 }
 .copyright-links {
-  width: 50%;
-  text-align: center;
+  width: 100%;
+  text-align: right;
   align-content: end;
+  padding-top: 30px;
 }
 .copyright-links p {
   font-family: "pantonbold";
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .main-footertwo .reachout {
@@ -85,11 +90,17 @@ ul li p {
 .main-footertwo .findus,
 .main-footertwo .socials,
 .main-footertwo .nav-links {
-  height: 53%;
+  height: 58%;
   flex-wrap: wrap;
 }
 .nav-links {
   width: 10%;
+}
+.nav-links a,
+.nav-links p {
+  color: white !important;
+  font-family: "pantonlight" !important;
+  font-weight: 400 !important;
 }
 .main-footertwo .findus ul,
 .main-footertwo .socials ul,
@@ -98,7 +109,7 @@ ul li p {
 }
 .dnd-footer-logo {
   width: 30%;
-  height: 56%;
+  height: 64%;
   position: relative;
 }
 .dnd-footer-logo .footerlogo {
@@ -113,21 +124,22 @@ ul li p {
 }
 .newslatter form input {
   background-color: transparent;
-  color: black;
+  color: white;
   outline: none;
   border: none;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   width: 85%;
   font-size: 5rem;
   font-family: "PathwayGothicOne";
 }
 .newslatter form input::placeholder {
-  color: black;
+  color: white;
 }
 
 .footer-col__copy--inline a {
   position: relative;
   display: inline-block;
+  color: white;
 }
 
 .footer-col__copy--inline a::after {
@@ -150,7 +162,7 @@ ul li p {
 }
 .copyrightnav a {
   font-family: "pantonbold";
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 .blinks:hover {
   animation: blinks 0.4s ease;

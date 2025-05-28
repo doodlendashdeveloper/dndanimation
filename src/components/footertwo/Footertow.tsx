@@ -4,11 +4,20 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../../assets/images/Logo.png";
 import logoani from "../../assets/images/logo_ani.gif";
-import footerlogo from "../../assets/images/footerlogo.png";
+// import footerlogo from "../../assets/images/footerlogo.png";
+import drop from "../../assets/images/drop.gif";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FooterTwo = () => {
+const FooterTwo = ({ scrollToRef }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("Header ref called", scrollToRef);
+    if (scrollToRef?.current) {
+      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [email, setEmail] = useState("");
 
   const handleSubmit = (event) => {
@@ -46,7 +55,7 @@ const FooterTwo = () => {
       </div>
       <div className="sticky-footer footertwo ">
         <div className="main-footertwo">
-          <div className="reachout footer-col__copy--inline">
+          {/* <div className="reachout footer-col__copy--inline">
             <ul>
               <li>
                 <p>
@@ -54,7 +63,7 @@ const FooterTwo = () => {
                 </p>
               </li>
               <li className="footer-col__copy--inline">
-                <a href="/">info@thedndanimation.com</a>
+                <a href="/">info@dndanimations.com</a>
               </li>
               <li>
                 <a href="tel:7732196748">
@@ -62,13 +71,9 @@ const FooterTwo = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="dnd-footer-logo">
-            <img
-              className="footerlogo"
-              src={footerlogo}
-              alt="Image Not Available"
-            />
+            <img className="footerlogo" src={drop} alt="Image Not Available" />
           </div>
           <div className="findus footer-col__copy--inline">
             <ul>
@@ -81,18 +86,21 @@ const FooterTwo = () => {
                 </p>
               </li>
               <li>
-                <a href="/">
-                  the dnd animation studio ltd
-                  <br /> studie 02
-                </a>
+                <a href="/">dnd animations</a>
               </li>
               <li>
                 <a href="/">
-                  de beauvoir block, 92-96
+                  808 N Cleveland Ave,
                   <br />
-                  de beauvoir road
-                  <br />
-                  london, n1 4en
+                  Chicago, IL 60610
+                </a>
+              </li>
+              <li className="footer-col__copy--inline">
+                <a href="/">info@dndanimations.com</a>
+              </li>
+              <li>
+                <a href="tel:7732196748">
+                  / <span>(773) 219-6748</span>
                 </a>
               </li>
             </ul>
@@ -153,7 +161,7 @@ const FooterTwo = () => {
           </div>
         </div>
         <div className="footertwo-bottom">
-          <div className="newslatter">
+          {/* <div className="newslatter">
             <form>
               <input
                 type="email"
@@ -169,29 +177,19 @@ const FooterTwo = () => {
                 }}
               />
             </form>
-          </div>
+          </div> */}
           <div className="copyright-links">
             <p className="copyrightnav">
-              © the DND Animation 2025/{" "}
+              © DND Animations 2025/{" "}
               <a href="/" className="blinks">
-                site credits
+                Terms
               </a>
               /{" "}
               <a href="/" className="blinks">
                 privacy
               </a>
               /{" "}
-              <a
-                href="#"
-                className="blinks"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById("up");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
+              <a href="#" onClick={handleClick} className="blinks">
                 up
               </a>
             </p>

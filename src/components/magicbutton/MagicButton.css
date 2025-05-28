@@ -1,0 +1,52 @@
+.hover-btn {
+  width: 150px;
+  /* height: 40px; */
+  padding: 6px 10px 9px 10px;
+  background-color: #94ff00;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  font-size: 0.9rem;
+  /* font-weight: bold; */
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  z-index: 5;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hover-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #0042ff;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease-out, height 0.6s ease-out;
+  z-index: 1;
+}
+.hover-btn:hover {
+  color: white;
+}
+
+.hover-btn:hover::before {
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+.hover-btn-text {
+  position: relative;
+  z-index: 2;
+}
+.hover-btn .hover-btn-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}

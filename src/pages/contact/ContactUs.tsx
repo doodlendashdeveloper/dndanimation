@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import MagicButton from "../../components/magicbutton/MagicButton.tsx";
 
 const ContactUs = () => {
   return (
@@ -13,9 +14,7 @@ const ContactUs = () => {
             ARCHITECTS, DESIGNERS AND OTHER CREATIVE PEOPLE WHO WANT TO SHOWCASE
             THEIR PORTFOLIO IN A SPECTACULAR MODERN WAY.
           </p>
-          <a href="#" className="contact-button">
-            CONTACT NOW <span className="arrow">→</span>
-          </a>
+          <MagicButton link="#">CONTACT NOW</MagicButton>
         </div>
       </div>
     </section>

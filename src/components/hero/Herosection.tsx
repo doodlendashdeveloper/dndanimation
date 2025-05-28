@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import bannervideo from "../../assets/videos/video.mp4";
@@ -8,7 +8,7 @@ import "./hero.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Herosection = () => {
+const Herosection = ({ headerRef }) => {
   useEffect(() => {
     ScrollTrigger.getAll().forEach((t) => t.kill());
 
@@ -19,7 +19,7 @@ const Herosection = () => {
         end: "+=3000", // Smoothness maintain rakhne ke liye
         scrub: 2, // Lag-free smooth scroll
         pin: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -35,14 +35,15 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div className="hero-container">
-      <video width="100%" height="100%" loop autoPlay muted>
-        <source src={bannervideo} type="video/mp4" />
-      </video>
-      <div className="mask">
-        {/* <img src={mypng} alt="image not available" /> */}
-        <h1 className="bgfont">DND</h1>
-        {/* <video
+    <div ref={headerRef}>
+      <div className="hero-container">
+        <video width="100%" height="100%" loop autoPlay muted>
+          <source src={bannervideo} type="video/mp4" />
+        </video>
+        <div className="mask">
+          {/* <img src={mypng} alt="image not available" /> */}
+          <h1 className="bgfont">DND</h1>
+          {/* <video
           className="springyvid"
           width="100%"
           height="100%"
@@ -52,12 +53,13 @@ const Herosection = () => {
         >
           <source src={springy} type="video/mp4" />
         </video> */}
-        {/* <img
+          {/* <img
           className="myimg"
           width="300px"
           src={img}
           alt="Image not Available"
         /> */}
+        </div>
       </div>
     </div>
   );
