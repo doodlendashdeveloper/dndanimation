@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./footertwo.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import logo from "../../assets/images/Logo.png";
+import logoani from "../../assets/images/logo_ani.gif";
 import footerlogo from "../../assets/images/footerlogo.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,28 +17,32 @@ const FooterTwo = () => {
     setEmail("");
   };
 
-  useEffect(() => {
-    gsap.to(".theline", {
-      transformOrigin: "0% 0%",
-      x: "-7%",
-      rotation: -6,
-      scrollTrigger: {
-        trigger: ".theline",
-        scroller: "body",
-        start: "top top",
-        end: "top -20%",
-        scrub: true,
-        markers: true,
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.to(".theline", {
+  //     transformOrigin: "0% 0%",
+  //     x: "-7%",
+  //     rotation: -6,
+  //     scrollTrigger: {
+  //       trigger: ".theline",
+  //       scroller: "body",
+  //       start: "top top",
+  //       end: "top -20%",
+  //       scrub: true,
+  //       markers: true,
+  //     },
+  //   });
+  // }, []);
 
   return (
     <>
       <div className="theline">
-        <del>
-          <h1>The Line</h1>
-        </del>
+        {/* <del>
+          <h1>Dnd animation</h1>
+        </del> */}
+        <div className="footer-top-logo">
+          <img src={logoani} alt="not available" className="logo_ani" />
+          <img src={logo} alt="WORK Logo" className="logo" />
+        </div>
       </div>
       <div className="sticky-footer footertwo ">
         <div className="main-footertwo">
@@ -48,11 +54,11 @@ const FooterTwo = () => {
                 </p>
               </li>
               <li className="footer-col__copy--inline">
-                <a href="/">info@thelineanimation.com</a>
+                <a href="/">info@thedndanimation.com</a>
               </li>
               <li>
-                <a href="/">
-                  / <span>44 (0)20 30020224</span>
+                <a href="tel:7732196748">
+                  / <span>(773) 219-6748</span>
                 </a>
               </li>
             </ul>
@@ -76,7 +82,7 @@ const FooterTwo = () => {
               </li>
               <li>
                 <a href="/">
-                  the line animation studio ltd
+                  the dnd animation studio ltd
                   <br /> studie 02
                 </a>
               </li>
@@ -138,22 +144,10 @@ const FooterTwo = () => {
                 <a href="/">work</a>
               </li>
               <li>
-                <a href="/">entertainment</a>
-              </li>
-              <li>
                 <a href="/">about</a>
               </li>
               <li>
-                <a href="/">feed</a>
-              </li>
-              <li>
-                <a href="/">podcast</a>
-              </li>
-              <li>
                 <a href="/">contact</a>
-              </li>
-              <li>
-                <a href="/">shop</a>
               </li>
             </ul>
           </div>
@@ -178,7 +172,7 @@ const FooterTwo = () => {
           </div>
           <div className="copyright-links">
             <p className="copyrightnav">
-              © the line studio 2025/{" "}
+              © the DND Animation 2025/{" "}
               <a href="/" className="blinks">
                 site credits
               </a>
@@ -187,7 +181,17 @@ const FooterTwo = () => {
                 privacy
               </a>
               /{" "}
-              <a href="/" className="blinks">
+              <a
+                href="#"
+                className="blinks"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById("up");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 up
               </a>
             </p>

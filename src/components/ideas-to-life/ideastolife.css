@@ -3,7 +3,11 @@
   height: 100vh;
   z-index: 2;
   position: relative;
+  background-color: black;
 }
 .ideas-to-life .idea-vid {
-  object-fit: cover;
+  object-fit: contain;
+  width: 100vw;
+  display: block;
+  height: auto;
 }

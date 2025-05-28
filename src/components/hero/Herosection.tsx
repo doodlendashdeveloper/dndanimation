@@ -16,8 +16,8 @@ const Herosection = () => {
       scrollTrigger: {
         trigger: ".hero-container",
         start: "top top",
-        end: "+=2000",
-        scrub: 1,
+        end: "+=3000", // Smoothness maintain rakhne ke liye
+        scrub: 2, // Lag-free smooth scroll
         pin: true,
         markers: true,
       },
@@ -25,9 +25,12 @@ const Herosection = () => {
 
     tl.fromTo(
       ".bgfont",
-      { scale: 27 },
-      { scale: 1, ease: "power2.out", duration: 1 },
-      0.2
+      { scale: 1 },
+      {
+        scale: 27,
+        ease: "power3.inOut", // Natural speed-up and slow-down
+      }
+      // Remove the delay here, or set to 0
     );
   }, []);
 
