@@ -94,7 +94,7 @@ ul li p {
   flex-wrap: wrap;
 }
 .nav-links {
-  width: 10%;
+  width: 14%;
 }
 .nav-links a,
 .nav-links p {
@@ -108,15 +108,17 @@ ul li p {
   padding-top: 100px;
 }
 .dnd-footer-logo {
-  width: 30%;
+  width: 39%;
+  display: flex;
   height: 64%;
   position: relative;
+  justify-content: center;
 }
 .dnd-footer-logo .footerlogo {
   width: 550px;
   position: absolute;
   top: 0;
-  left: -40px;
+  left: 140px;
 }
 
 .newslatter {
