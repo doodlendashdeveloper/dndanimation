@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/images/Logo.png";
@@ -21,10 +21,12 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar nav-stycky">
       <div className="nav-logo">
-        <img src={logoani} alt="not available" className="logo_ani" />
-        <img src={logo} alt="WORK Logo" className="logo" />
+        <a href="/">
+          <img src={logoani} alt="not available" className="logo_ani" />
+          <img src={logo} alt="WORK Logo" className="logo" />
+        </a>
       </div>
-      <ul className="nav-links">
+      <ul className="navbar-links">
         <motion.li
           variants={blinkvariants}
           initial="start"

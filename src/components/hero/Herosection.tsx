@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import bannervideo from "../../assets/videos/video.mp4";
@@ -16,10 +16,10 @@ const Herosection = ({ headerRef }) => {
       scrollTrigger: {
         trigger: ".hero-container",
         start: "top top",
-        end: "+=3000", // Smoothness maintain rakhne ke liye
-        scrub: 2, // Lag-free smooth scroll
+        end: "+=3000",
+        scrub: 2,
         pin: true,
-        // markers: true,
+        markers: true,
       },
     });
 
@@ -28,9 +28,8 @@ const Herosection = ({ headerRef }) => {
       { scale: 1 },
       {
         scale: 27,
-        ease: "power3.inOut", // Natural speed-up and slow-down
+        ease: "power3.inOut",
       }
-      // Remove the delay here, or set to 0
     );
   }, []);
 
@@ -42,6 +41,11 @@ const Herosection = ({ headerRef }) => {
         </video>
         <div className="mask">
           {/* <img src={mypng} alt="image not available" /> */}
+          {/* <div className="mobile-bgfont-container">
+            <h1 className="mobile-bgfont bgfont">D</h1>
+            <h1 className="mobile-bgfont bgfont">N</h1>
+            <h1 className="mobile-bgfont bgfont">D</h1>
+          </div> */}
           <h1 className="bgfont">DND</h1>
           {/* <video
           className="springyvid"

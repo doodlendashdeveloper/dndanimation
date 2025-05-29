@@ -11,8 +11,37 @@ const Banner = () => {
   const constraintsRef = useRef(null);
   const { width, height } = useWindowDimensions();
   const [Secheight, setSecheight] = useState(800);
+
+  const [secHeight, setSecHeight] = useState(height);
+
   useEffect(() => {
-    console.log("prev height", Secheight);
+    let calculatedHeight = height;
+
+    if (width <= 360) {
+      calculatedHeight = 260;
+    } else if (width <= 375) {
+      calculatedHeight = 275;
+    } else if (width <= 414) {
+      calculatedHeight = 310;
+    } else if (width <= 480) {
+      calculatedHeight = 350;
+    } else if (width <= 580) {
+      calculatedHeight = 400;
+    } else if (width <= 690) {
+      calculatedHeight = 460;
+    } else if (width <= 768) {
+      calculatedHeight = 510;
+    } else if (width <= 1024) {
+      calculatedHeight = 660;
+    } else {
+      calculatedHeight = height;
+    }
+
+    setSecHeight(calculatedHeight);
+  }, [width, height]);
+
+  useEffect(() => {
+    // console.log("prev height", Secheight);
 
     const timer = setTimeout(() => {
       setSecheight((prevHeight) => prevHeight - 1);
@@ -59,10 +88,10 @@ const Banner = () => {
   return (
     <motion.div
       ref={constraintsRef}
-      style={{ height: `${height}px` }}
+      style={{ height: `${secHeight}px` }}
       className="banner-text-wrapper"
     >
-      <img src={Splash} className="build-image" />
+      <img src={Splash} alt="splash" className="build-image" />
       <div className="text-wrapper">
         <div className="first-line">
           <div className="banner-text1">YOUR NEXT</div>

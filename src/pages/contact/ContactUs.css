@@ -14,7 +14,7 @@
 }
 
 .contact-container {
-  max-width: 800px;
+  max-width: 42rem;
   margin: 0 auto;
 }
 
@@ -70,4 +70,72 @@
 
 .contact-button:hover .arrow {
   transform: translateX(5px);
+}
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1440px) {
+  .contact-container {
+    max-width: 43rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-container {
+    max-width: 44rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-container {
+    max-width: 45rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 690px) {
+  .contact-container {
+    max-width: 46rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .contact-container {
+    max-width: 47rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-container {
+    max-width: 48rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .contact-container {
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-container {
+    max-width: 51rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .contact-container {
+    max-width: 52rem;
+  }
 }

@@ -9,9 +9,77 @@
 }
 .bannerfour .cta-buttons {
   display: flex;
-  width: 350px;
+  gap: 1.2rem;
   position: absolute;
   bottom: 39%;
   left: 10.7%;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1880px) {
+  .bannerfour .cta-buttons {
+    left: 10.7%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .bannerfour .cta-buttons {
+    left: 8.7%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1366px) {
+  .bannerfour .cta-buttons {
+    left: 10.7%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .bannerfour .cta-buttons {
+    left: 9.2%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bannerfour {
+    height: 100%;
+    background-color: #ff0000;
+  }
+  .bannerfour .cta-buttons {
+    left: 10.6%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 800px) {
+  .bannerfour .cta-buttons {
+    left: 10.6%;
+    bottom: 37%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 690px) {
+}
+
+@media only screen and (max-width: 580px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 360px) {
 }

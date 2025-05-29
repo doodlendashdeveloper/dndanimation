@@ -16,11 +16,13 @@ import Herosection from "../components/hero/Herosection.tsx";
 import Bannerfour from "../components/banners/bannerfour/Bannerfour.tsx";
 // import BannerThree from "../components/banners/banner-three/BannerThree.tsx";
 import IdeasToLife from "../components/ideas-to-life/IdeasToLife.tsx";
+import TopPic from "../components/toppic/TopPic.tsx";
 const Home = () => {
   const headerRef = useRef(null);
   return (
     <div>
       {/* <HomeTopSection image={Video} /> */}
+      <TopPic />
       <Herosection headerRef={headerRef} />
       <Bannerfour />
       {/* <BannerTwo /> */}

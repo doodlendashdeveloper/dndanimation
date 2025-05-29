@@ -14,16 +14,13 @@
   font-size: 28rem;
   font-weight: bold;
   background-image: url("../../../assets/images/spark_light.png");
-
   background-size: cover;
   background-position: inherit;
   background-repeat: repeat;
-
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   /* Optional shadow to enhance definition */
   text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 }
@@ -32,7 +29,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Darken the image inside the text */
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +53,7 @@
   bottom: -34%;
   width: 50%;
   height: min-content;
-  animation: spin 25s linear infinite;
+  animation: spin 45s linear infinite;
   transform-origin: center;
 }
 
@@ -85,14 +82,14 @@
   }
 }
 /* Keyframes for spinning */
-/* @keyframes spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
 .text-wrapper {
   position: absolute;
   align-items: center;
@@ -132,4 +129,88 @@
 
 .build-image {
   width: 100%;
+}
+
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .build-image {
+    width: 110%;
+  }
+  .dice-left {
+    left: -23%;
+    width: 53%;
+  }
+  .dice-right {
+    width: 20rem;
+  }
+  .text-wrapper {
+    right: 26.5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .dice-left {
+    width: 58%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dice-left {
+    width: 68%;
+    left: -31%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dice-left {
+    width: 55%;
+    left: -27%;
+  }
+  .dice-right {
+    width: 24rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .dice-right {
+    width: 22rem;
+  }
+  .dice-left {
+    width: 56%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .dice-left {
+    width: 58%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dice-left {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 360px) {
+  .dice-left {
+    width: 60%;
+  }
 }

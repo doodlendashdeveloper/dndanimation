@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
+  background-color: white;
 }
 
 .mask {
@@ -11,7 +12,7 @@
   background: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: self-start;
+  align-items: center;
   mix-blend-mode: screen;
   position: relative;
 }
@@ -27,7 +28,7 @@
   transform-origin: center center;
   margin: 0;
   font-family: "antique";
-  position: absolute;
+  position: relative;
 }
 .hero-container .springyvid {
   position: fixed;
@@ -45,4 +46,75 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+/* .mobile-bgfont-container {
+  display: none;
+} */
+@media only screen and (max-width: 1600px) {
+  .bgfont {
+    font-size: 28rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .bgfont {
+    font-size: 27rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) {
+  .bgfont {
+    font-size: 27.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bgfont {
+    font-size: 29rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 690px) {
+  .bgfont {
+    font-size: 30rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .bgfont {
+    font-size: 32rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bgfont {
+    font-size: 38rem;
+  }
+  .hero-container video {
+    object-fit: fill;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .bgfont {
+    font-size: 40rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 360px) {
 }

@@ -1,61 +1,62 @@
-import React, { useEffect, useRef } from "react";
+import React /*, { useEffect, useRef }*/ from "react";
 import "./portfolio.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import socialm1 from "../../assets/images/socialmedia1.png";
-import degitalart from "../../assets/images/degitalart.png";
-import portfolio2025 from "../../assets/images/portfolio2025.png";
-import portfolio from "../../assets/images/portfolio.png";
-import logo2 from "../../assets/images/logo2.png";
-import adcampaign from "../../assets/images/adcampaign.png";
-import b1 from "../../assets/images/b1.png";
-import b2 from "../../assets/images/b2.png";
-import b3 from "../../assets/images/b3.png";
-import b4 from "../../assets/images/b4.png";
-import b5 from "../../assets/images/b5.png";
-import b6 from "../../assets/images/b6.png";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import socialm1 from "../../assets/images/socialmedia1.png";
+// import degitalart from "../../assets/images/degitalart.png";
+// import portfolio2025 from "../../assets/images/portfolio2025.png";
+// import portfolio from "../../assets/images/portfolio.png";
+// import logo2 from "../../assets/images/logo2.png";
+// import adcampaign from "../../assets/images/adcampaign.png";
+// import b1 from "../../assets/images/b1.png";
+// import b2 from "../../assets/images/b2.png";
+// import b3 from "../../assets/images/b3.png";
+// import b4 from "../../assets/images/b4.png";
+// import b5 from "../../assets/images/b5.png";
+// import b6 from "../../assets/images/b6.png";
 // import p1 from "../../assets/images/p1.png";
 // import p2 from "../../assets/images/p2.png";
 // import p3 from "../../assets/images/p3.png";
-import p4 from "../../assets/images/p4.png";
-import p5 from "../../assets/images/p5.png";
-import p6 from "../../assets/images/p6.png";
-import s1 from "../../assets/images/s1.png";
+// import p4 from "../../assets/images/p4.png";
+// import p5 from "../../assets/images/p5.png";
+// import p6 from "../../assets/images/p6.png";
+// import s1 from "../../assets/images/s1.png";
 // import s2 from "../../assets/images/s2.png";
-import s3 from "../../assets/images/s3.png";
-import s4 from "../../assets/images/s4.png";
-import s5 from "../../assets/images/s5.png";
+// import s3 from "../../assets/images/s3.png";
+// import s4 from "../../assets/images/s4.png";
+// import s5 from "../../assets/images/s5.png";
 // import s6 from "../../assets/images/s6.png";
-import s7 from "../../assets/images/s7.png";
-import s8 from "../../assets/images/s8.png";
-import pizzareplace from "../../assets/videos/pizzareplace.mp4";
-import pizza2replace from "../../assets/videos/pizza2replace.mp4";
-import odflatsmallreplace from "../../assets/videos/odflatsmallreplace.mp4";
-import overdosereplace from "../../assets/videos/overdosereplace.mp4";
-import odcreamcupreplace from "../../assets/videos/odcreamcupreplace.mp4";
-import revolution from "../../assets/videos/revolution.mp4";
+// import s7 from "../../assets/images/s7.png";
+// import s8 from "../../assets/images/s8.png";
+// import pizzareplace from "../../assets/videos/pizzareplace.mp4";
+// import pizza2replace from "../../assets/videos/pizza2replace.mp4";
+// import odflatsmallreplace from "../../assets/videos/odflatsmallreplace.mp4";
+// import overdosereplace from "../../assets/videos/overdosereplace.mp4";
+// import odcreamcupreplace from "../../assets/videos/odcreamcupreplace.mp4";
+// import revolution from "../../assets/videos/revolution.mp4";
+import portfoliovid from "../../assets/videos/portfoliovid.mp4";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
-  const pRef = useRef(null);
+  // const pRef = useRef(null);
   // const portfolioRef = useRef(null);
 
-  useEffect(() => {
-    const el = pRef.current;
+  // useEffect(() => {
+  //   const el = pRef.current;
 
-    if (!el) return;
+  //   if (!el) return;
 
-    const scrollLength = el.scrollWidth - window.innerWidth;
+  //   const scrollLength = el.scrollWidth - window.innerWidth;
 
-    gsap.to(el, {
-      x: -scrollLength,
-      duration: 20,
-      repeat: -1,
-      yoyo: true,
-      ease: "none",
-    });
-  }, []);
+  //   gsap.to(el, {
+  //     x: -scrollLength,
+  //     duration: 20,
+  //     repeat: -1,
+  //     yoyo: true,
+  //     ease: "none",
+  //   });
+  // }, []);
 
   // useEffect(() => {
   //   const el = pRef.current;
@@ -85,7 +86,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-section" /*ref={portfolioRef}*/>
-      <div className="grid-wrapper" ref={pRef}>
+      {/* <div className="grid-wrapper" ref={pRef}>
         <div className="item socialMedia">
           <img src={socialm1} alt="Flat 15%" />
         </div>
@@ -102,9 +103,6 @@ const Portfolio = () => {
           <img src={p6} alt="Professional" />
         </div>
         <div className="item portfolio2025">
-          {/* <video width="100%" height="100%" loop autoPlay muted>
-            <source src={bannervideo} type="video/mp4" />
-          </video> */}
           <img src={portfolio2025} alt="portfolio2025" />
         </div>
         <div className="item odicecreame">
@@ -120,7 +118,6 @@ const Portfolio = () => {
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={pizzareplace} type="video/mp4" />
           </video>
-          {/* <img src={s2} alt="pizza" /> */}
         </div>
         <div className="item logo2">
           <img src={logo2} alt="logo2" />
@@ -129,13 +126,11 @@ const Portfolio = () => {
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={overdosereplace} type="video/mp4" />
           </video>
-          {/* <img src={p3} alt="overdose" /> */}
         </div>
         <div className="item odcreamcup">
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={odcreamcupreplace} type="video/mp4" />
           </video>
-          {/* <img src={s6} alt="odcreamcup" /> */}
         </div>
         <div className="item adcampaign">
           <img src={adcampaign} alt="adcampaign" />
@@ -147,7 +142,6 @@ const Portfolio = () => {
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={odflatsmallreplace} type="video/mp4" />
           </video>
-          {/* <img src={p2} alt="flatsmall" /> */}
         </div>
         <div className="item transform">
           <img src={b4} alt="transform" />
@@ -174,7 +168,6 @@ const Portfolio = () => {
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={pizza2replace} type="video/mp4" />
           </video>
-          {/* <img src={p1} alt="pizza2" /> */}
         </div>
         <div className="item portfolio">
           <img src={portfolio} alt="portfolio" />
@@ -183,10 +176,19 @@ const Portfolio = () => {
           <video width="100%" height="100%" loop autoPlay muted>
             <source src={revolution} type="video/mp4" />
           </video>
-          {/* <img src={b2} alt="revolution" /> */}
         </div>
         <div className="item empty-space"></div>
-      </div>
+      </div> */}
+      <video
+        className="portfoliovid"
+        width="100%"
+        height="100%"
+        loop
+        autoPlay
+        muted
+      >
+        <source src={portfoliovid} type="video/mp4" />
+      </video>
     </div>
   );
 };
