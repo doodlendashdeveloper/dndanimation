@@ -14,7 +14,9 @@ const ContactUs = () => {
             ARCHITECTS, DESIGNERS AND OTHER CREATIVE PEOPLE WHO WANT TO SHOWCASE
             THEIR PORTFOLIO IN A SPECTACULAR MODERN WAY.
           </p>
-          <MagicButton link="#">CONTACT NOW</MagicButton>
+          <MagicButton classname="contact-btn" link="#">
+            CONTACT NOW
+          </MagicButton>
         </div>
       </div>
     </section>

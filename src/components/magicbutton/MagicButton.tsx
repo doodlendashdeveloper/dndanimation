@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./MagicButton.css";
 
-const MagicButton = ({ children, link }) => {
+const MagicButton = ({ children, link, classname }) => {
   const btnRef = useRef(null);
 
   const setCoords = (e) => {
@@ -15,7 +15,7 @@ const MagicButton = ({ children, link }) => {
   return (
     <a
       href={link}
-      className="hover-btn"
+      className={`hover-btn ${classname}`}
       ref={btnRef}
       onMouseMove={setCoords}
       onMouseLeave={setCoords}

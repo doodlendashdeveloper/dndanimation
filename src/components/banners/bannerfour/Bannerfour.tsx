@@ -21,8 +21,12 @@ const Bannerfour = () => {
         <source src={springymobile} type="video/mp4" />
       </video>
       <div className="cta-buttons">
-        <MagicButton link="/">get a quote</MagicButton>
-        <MagicButton link="tel:7732196748">(773) 219-6748</MagicButton>
+        <MagicButton classname="motion-btn" link="/">
+          get a quote
+        </MagicButton>
+        <MagicButton classname="motion-btn" link="tel:7732196748">
+          (773) 219-6748
+        </MagicButton>
       </div>
     </div>
   );
