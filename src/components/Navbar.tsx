@@ -5,6 +5,7 @@ import logo from "../assets/images/Logo.png";
 import logoani from "../assets/images/logo_ani.gif";
 import MagicButton from "./magicbutton/MagicButton.tsx";
 import { motion } from "framer-motion";
+import SideBar from "./sidebar/SideBar.tsx";
 
 const Navbar: React.FC = () => {
   const blinkvariants = {
@@ -19,7 +20,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="navbar nav-stycky">
+    <div className="navbar nav-sticky">
       <div className="nav-logo">
         <a href="/">
           <img src={logoani} alt="not available" className="logo_ani" />
@@ -59,11 +60,10 @@ const Navbar: React.FC = () => {
           <Link to="/contact">Contact</Link>
         </motion.li>
       </ul>
-      <div>
-        <div className="container">
-          <MagicButton link="tel:7732196748">(773) 219-6748</MagicButton>
-        </div>
+      <div className="container">
+        <MagicButton link="tel:7732196748">(773) 219-6748</MagicButton>
       </div>
+      <SideBar />
     </div>
   );
 };

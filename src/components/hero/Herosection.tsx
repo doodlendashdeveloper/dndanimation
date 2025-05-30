@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import bannervideo from "../../assets/videos/video.mp4";
+import bannervideomobile from "../../assets/videos/bannervideomobile.mp4";
 // import springy from "../../assets/videos/springy.mp4";
 // import mypng from "../../assets/images/mypng.png";
 import "./hero.css";
@@ -16,28 +17,46 @@ const Herosection = ({ headerRef }) => {
       scrollTrigger: {
         trigger: ".hero-container",
         start: "top top",
-        end: "+=3000",
-        scrub: 2,
+        end: "+=2000",
+        scrub: 1,
         pin: true,
-        markers: true,
+        // markers: true,
       },
     });
 
     tl.fromTo(
       ".bgfont",
-      { scale: 1 },
+      { scale: 27 },
       {
-        scale: 27,
+        scale: 1,
         ease: "power3.inOut",
-      }
+      },
+      0
     );
   }, []);
 
   return (
     <div ref={headerRef}>
       <div className="hero-container">
-        <video width="100%" height="100%" loop autoPlay muted>
+        <video
+          className="bannervideo"
+          width="100%"
+          height="100%"
+          loop
+          autoPlay
+          muted
+        >
           <source src={bannervideo} type="video/mp4" />
+        </video>
+        <video
+          className="bannervideo-mobile"
+          width="100%"
+          height="100%"
+          loop
+          autoPlay
+          muted
+        >
+          <source src={bannervideomobile} type="video/mp4" />
         </video>
         <div className="mask">
           {/* <img src={mypng} alt="image not available" /> */}

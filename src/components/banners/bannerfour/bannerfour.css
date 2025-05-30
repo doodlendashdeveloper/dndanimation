@@ -7,6 +7,10 @@
 .bannerfour .springy {
   object-fit: cover;
 }
+.bannerfour .springy-mobile {
+  object-fit: cover;
+  display: none;
+}
 .bannerfour .cta-buttons {
   display: flex;
   gap: 1.2rem;
@@ -29,6 +33,9 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .bannerfour .cta-buttons {
+    left: 6.5%;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -39,7 +46,7 @@
 
 @media only screen and (max-width: 1280px) {
   .bannerfour .cta-buttons {
-    left: 9.2%;
+    left: 6.5%;
   }
 }
 
@@ -70,6 +77,18 @@
 }
 
 @media only screen and (max-width: 580px) {
+  .bannerfour .cta-buttons {
+    left: 8.6%;
+    bottom: 78%;
+  }
+  .bannerfour .springy {
+    object-fit: cover;
+    display: none;
+  }
+  .bannerfour .springy-mobile {
+    object-fit: cover;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 480px) {

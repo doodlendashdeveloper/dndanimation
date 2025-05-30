@@ -1,4 +1,4 @@
-.nav-stycky {
+.nav-sticky {
   position: sticky;
   top: 0;
 }
@@ -28,11 +28,11 @@
 .nav-logo a {
   display: flex;
 }
-.logo {
-  width: 16rem;
+.nav-logo .logo {
+  width: 17rem;
   object-fit: contain;
 }
-img.logo_ani {
+.nav-logo .logo_ani {
   width: 1.95rem;
   object-fit: contain;
 }
@@ -106,10 +106,10 @@ img.logo_ani {
 }
 
 @media only screen and (max-width: 1366px) {
-  .logo {
+  .nav-logo .logo {
     width: 21rem;
   }
-  img.logo_ani {
+  .nav-logo .logo_ani {
     width: 2.61rem;
   }
   .hover-btn .hover-btn-text {
@@ -118,10 +118,10 @@ img.logo_ani {
 }
 
 @media only screen and (max-width: 1280px) {
-  .logo {
+  .nav-logo .logo {
     width: 18.9rem;
   }
-  img.logo_ani {
+  .nav-logo .logo_ani {
     width: 2.3rem;
   }
 
@@ -148,7 +148,7 @@ img.logo_ani {
 }
 
 @media only screen and (max-width: 768px) {
-  img.logo_ani {
+  .nav-logo .logo_ani {
     width: 2.5rem;
   }
 }
@@ -157,6 +157,21 @@ img.logo_ani {
 }
 
 @media only screen and (max-width: 580px) {
+  .nav-logo {
+    margin-top: 15px;
+  }
+  .nav-logo .logo {
+    width: 33.9rem;
+  }
+  .nav-logo .logo_ani {
+    width: 4.1rem;
+  }
+  .navbar .container {
+    display: none;
+  }
+  .navbar .navbar-links {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {

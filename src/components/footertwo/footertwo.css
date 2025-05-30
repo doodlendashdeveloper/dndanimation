@@ -194,7 +194,7 @@ ul li p {
   align-items: center;
 }
 .footer-top-logo .logo_ani {
-  width: 11%;
+  width: 10%;
 }
 .footer-top-logo .logo {
   width: 90%;
@@ -283,8 +283,8 @@ ul li p {
   .dnd-footer-logo .footerlogo {
     max-width: 100%;
     margin: auto;
-    left: 50%;
-    top: -50px;
+    left: 32%;
+    top: -70px;
     transform: translate(-50%, -50%) !important;
   }
 
@@ -312,12 +312,7 @@ ul li p {
   .footertwo a {
     font-size: 3rem;
   }
-  .dnd-footer-logo .footerlogo {
-    max-width: 100%;
-    margin: auto;
-    left: 50%;
-    transform: translate(-50%, -50%) !important;
-  }
+
   section.contact-section .contact-container {
     max-width: 85rem;
   }
@@ -343,9 +338,15 @@ ul li p {
   img.logo_ani {
     width: 4.1rem;
   }
+  .nav-links ul {
+    padding-top: 15px !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .sticky-footer {
+    height: 60vh;
+  }
 }
 
 @media only screen and (max-width: 414px) {
