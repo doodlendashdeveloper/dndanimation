@@ -1,7 +1,7 @@
-.lets-talk-section {
+/*.lets-talk-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* adjust the height as needed */
+  height: 100vh;
   overflow: hidden;
   justify-content: center;
   display: flex;
@@ -9,7 +9,7 @@
   background-color: white;
   z-index: 2;
 }
-.h1,
+ .h1,
 h1 {
   font-size: 12.15278vw;
 }
@@ -115,7 +115,6 @@ h1 {
 .scramble-wrapper {
   display: inline-block;
   position: relative;
-  /* width: 100vw; */
   flex: 1 1 auto;
 }
 
@@ -124,10 +123,10 @@ h1 {
   font-size: 230px;
   font-weight: 400;
   letter-spacing: -3px;
-  /* text-transform: capitalize; */
+  
   color: #000;
   white-space: nowrap;
-  /* position: relative; */
+  
 }
 
 .scramble-text::before {
@@ -145,4 +144,17 @@ h1 {
 
 a.footer-cta:hover .scramble-wrapper {
   transform: translateX(190px);
+} */
+
+.lets-talk-section {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background-image: url("../../assets/images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px;
+  z-index: 2;
 }

@@ -61,7 +61,9 @@ const Navbar: React.FC = () => {
         </motion.li>
       </ul>
       <div className="container">
-        <MagicButton link="tel:7732196748">(773) 219-6748</MagicButton>
+        <MagicButton classname="menu-tel" link="tel:7732196748">
+          (773) 219-6748
+        </MagicButton>
       </div>
       <SideBar />
     </div>
