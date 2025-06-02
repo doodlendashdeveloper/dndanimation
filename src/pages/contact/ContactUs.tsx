@@ -10,9 +10,7 @@ const ContactUs = () => {
           <div className="contact-line"></div>
           <h2 className="contact-title">Build your next amazing animation</h2>
           <p className="contact-description">
-            CREATIVE MINIMAL WORDPRESS THEME SUITABLE FOR AGENCIES, FREELANCERS,
-            ARCHITECTS, DESIGNERS AND OTHER CREATIVE PEOPLE WHO WANT TO SHOWCASE
-            THEIR PORTFOLIO IN A SPECTACULAR MODERN WAY.
+            We bring ideas to life through high-impact animation. From explainer videos to motion graphics, we craft visual stories that captivate, engage, and inspire. Whether you're a brand, startup, or creative agency — we animate your message with clarity and style.
           </p>
           <MagicButton classname="contact-btn" link="#">
             CONTACT NOW
