@@ -90,9 +90,9 @@ const FooterTwo = ({ scrollToRef }) => {
               </li>
               <li>
                 <a href="/">
-                  808 N Cleveland Ave,
+                  465 N Park Dr
                   <br />
-                  Chicago, IL 60610
+                  Chicago IL 60611
                 </a>
               </li>
               <li className="footer-col__copy--inline">

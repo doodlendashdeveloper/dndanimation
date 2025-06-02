@@ -8,6 +8,10 @@
 .ideas-to-life .idea-vid {
   object-fit: contain;
   width: 100vw;
+  display: block;
+}
+.idea-vid-mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -44,6 +48,13 @@
 }
 
 @media only screen and (max-width: 580px) {
+  .ideas-to-life .idea-vid {
+    display: none;
+  }
+
+  .idea-vid-mobile {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 480px) {

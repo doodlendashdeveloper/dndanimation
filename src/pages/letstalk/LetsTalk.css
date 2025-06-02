@@ -1,4 +1,4 @@
-/*.lets-talk-section {
+/* .lets-talk-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -148,13 +148,209 @@ a.footer-cta:hover .scramble-wrapper {
 
 .lets-talk-section {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 100vh !important;
   background-image: url("../../assets/images/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 50px;
+  display: grid;
+  place-items: center;
   z-index: 2;
+  overflow: hidden;
+}
+.lets-talk-section .lets-talk-inner-section {
+  width: 93%;
+  height: 87%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.lets-talk-inner-section .inner-empty {
+  width: 18.5%;
+}
+.text-div {
+  display: flex;
+}
+
+.lets-talk-inner-section .inner-left-text {
+  width: 56%;
+  display: flex;
+  padding-top: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.lets-talk-inner-section .nova-text {
+  transform: translateX(-26px);
+}
+.lets-talk-txt {
+  display: flex;
+}
+.lets-talk-txt .s {
+  transform: translate(50px);
+}
+.inner-left-text h1 {
+  font-size: 29rem;
+  line-height: 22rem;
+  font-weight: bold;
+  font-family: "ProximaNova";
+  margin: 0;
+  letter-spacing: -20px;
+}
+h1 sup {
+  position: absolute;
+  top: -65%;
+}
+.lets-talk-section .lets-talk-hand {
+  width: 26.7rem;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 4%;
+  transform-origin: bottom;
+  z-index: 4;
+}
+.inner-right-contact {
+  width: 25.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0rem 1rem 5rem;
+  position: relative;
+}
+
+.inner-right-contact .arrow {
+  position: relative;
+}
+.inner-right-contact .contact-us ul {
+  margin: 0;
+  padding: 0;
+}
+.inner-right-contact .contact-us li {
+  list-style-type: none;
+  font-weight: bold;
+}
+.inner-right-contact .contact-us a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-us ul li p {
+  font-size: 1.2rem;
+  font-family: "ProximaNova";
+  font-weight: bold;
+}
+
+.contact-us ul li a {
+  font-size: 1.2rem;
+  color: black;
+  font-family: "ProximaNova";
+}
+.contact-us .tel-btn {
+  padding: 1rem 0rem 3rem 0rem;
+}
+
+.contact-us .tel-btn a {
+  color: black;
+  font-family: "ProximaNova";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.contact-us li {
+  font-family: "ProximaNova";
+}
+
+.arrow img {
+  width: 9rem;
+}
+
+.lets-talk-inner-section .bottom-line {
+  width: 90%;
+  height: 15px;
+  background-color: black;
+  align-self: center;
+  margin-bottom: -0.3rem;
+}
+
+.scroll-txt {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  pointer-events: none;
+}
+.inner-right-contact .inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+.scroll-txt p {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .text-div {
+    flex-direction: column;
+  }
+  .lets-talk-inner-section .inner-left-text {
+    width: 100%;
+    align-items: start;
+    padding-left: 5rem;
+  }
+  .inner-empty {
+    display: none;
+  }
+  .inner-left-text h1 {
+    font-size: 40rem;
+    line-height: 32rem;
+    letter-spacing: -5px;
+  }
+  .lets-talk-txt .s {
+    transform: translate(25px);
+  }
+  .inner-right-contact {
+    width: 92%;
+  }
+  .inner-right-contact .inner-wrapper {
+    flex-direction: row;
+  }
+  .scroll-txt p {
+    font-size: 3rem;
+  }
+  .contact-us ul li p {
+    font-size: 3.2rem;
+  }
+  .contact-us ul li a {
+    font-size: 3.2rem;
+  }
+  .contact-us li {
+    font-size: 3rem;
+  }
+  .scroll-txt {
+    width: 50% !important;
+  }
+  .lets-talk-inner-section .nova-text {
+    transform: translateX(-7px);
+  }
+  .starik {
+    width: 18%;
+    display: grid;
+    align-items: center;
+  }
+  .starik img {
+    width: 15rem;
+  }
+  .lets-talk-section .lets-talk-hand {
+    width: 47rem;
+    bottom: -0.4rem;
+    left: 25%;
+  }
 }

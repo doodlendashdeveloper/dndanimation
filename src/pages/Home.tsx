@@ -22,8 +22,8 @@ const Home = () => {
   return (
     <div>
       {/* <HomeTopSection image={Video} /> */}
-      <TopPic />
-      <Herosection headerRef={headerRef} />
+      <TopPic headerRef={headerRef} />
+      <Herosection />
       <Bannerfour />
       {/* <BannerTwo /> */}
 

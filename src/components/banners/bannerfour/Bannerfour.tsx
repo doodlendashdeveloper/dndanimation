@@ -17,6 +17,7 @@ const Bannerfour = () => {
         loop
         autoPlay
         muted
+        playsinline
       >
         <source src={springymobile} type="video/mp4" />
       </video>

@@ -10,6 +10,11 @@
 }
 .portfolio-section .portfoliovid {
   object-fit: cover;
+  display: block;
+}
+.portfolio-section .portfoliovidmobile {
+  object-fit: cover;
+  display: none;
 }
 @media only screen and (max-width: 1600px) {
   .portfolio-section {
@@ -45,6 +50,12 @@
 }
 
 @media only screen and (max-width: 580px) {
+  .portfolio-section .portfoliovid {
+    display: none;
+  }
+  .portfolio-section .portfoliovidmobile {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 480px) {

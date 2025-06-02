@@ -17,6 +17,14 @@
 }
 
 @font-face {
+  font-family: "ProximaNova";
+  src: url("../src/assets/font/ProximaNova-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Pantonlight";
   src: url("../src/assets/font/panton/PantonDemoLight.otf") format("truetype");
   font-weight: normal;

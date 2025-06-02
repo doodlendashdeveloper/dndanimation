@@ -63,6 +63,7 @@
   left: 78%;
   top: 54%;
 }
+
 /* .dice-right {
   position: absolute;
   left: 18%;
@@ -194,6 +195,11 @@
 @media only screen and (max-width: 580px) {
   .dice-left {
     width: 58%;
+  }
+  @supports (-webkit-hyphens: none) {
+    .dice-left {
+      width: 58%;
+    }
   }
 }
 

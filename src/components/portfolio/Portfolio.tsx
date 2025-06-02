@@ -35,6 +35,7 @@ import "./portfolio.css";
 // import odcreamcupreplace from "../../assets/videos/odcreamcupreplace.mp4";
 // import revolution from "../../assets/videos/revolution.mp4";
 import portfoliovid from "../../assets/videos/portfoliovid.mp4";
+import portfoliovidmobile from "../../assets/videos/portfoliovidmobile.mp4";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -188,6 +189,17 @@ const Portfolio = () => {
         muted
       >
         <source src={portfoliovid} type="video/mp4" />
+      </video>
+      <video
+        className="portfoliovidmobile"
+        width="100%"
+        height="100%"
+        loop
+        muted
+        autoPlay
+        playsinline
+      >
+        <source src={portfoliovidmobile} type="video/mp4" />
       </video>
     </div>
   );

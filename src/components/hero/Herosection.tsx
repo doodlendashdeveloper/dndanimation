@@ -9,7 +9,7 @@ import "./hero.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Herosection = ({ headerRef }) => {
+const Herosection = () => {
   useEffect(() => {
     ScrollTrigger.getAll().forEach((t) => t.kill());
 
@@ -36,7 +36,7 @@ const Herosection = ({ headerRef }) => {
   }, []);
 
   return (
-    <div ref={headerRef}>
+    <div>
       <div className="hero-container">
         <video
           className="bannervideo"
@@ -45,6 +45,7 @@ const Herosection = ({ headerRef }) => {
           loop
           autoPlay
           muted
+          playsinline
         >
           <source src={bannervideo} type="video/mp4" />
         </video>
@@ -55,6 +56,7 @@ const Herosection = ({ headerRef }) => {
           loop
           autoPlay
           muted
+          playsinline
         >
           <source src={bannervideomobile} type="video/mp4" />
         </video>
