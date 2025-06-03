@@ -194,10 +194,11 @@ const Portfolio = () => {
         className="portfoliovidmobile"
         width="100%"
         height="100%"
-        loop
-        muted
         autoPlay
-        playsinline
+        muted
+        playsInline
+        loop
+        preload="auto"
       >
         <source src={portfoliovidmobile} type="video/mp4" />
       </video>

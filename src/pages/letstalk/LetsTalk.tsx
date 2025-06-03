@@ -2,65 +2,92 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import arrow from "../../assets/images/arrow.png";
 import starik from "../../assets/images/starik.png";
-import gsap from "gsap";
 import "./LetsTalk.css";
 import hand from "../../assets/images/hand.png";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+// Important: Register this BEFORE any scrollTriggers are defined
+// ScrollTrigger.normalizeScroll(true);
 
 const LetsTalk: React.FC = () => {
-  useEffect(() => {
-    const innerwidth = window.innerWidth;
-    console.log("innerwidth is = ", innerwidth);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     ScrollTrigger.refresh();
+  //   };
 
-    if (innerwidth <= 580) {
-      console.log("innerwidth is less then 580", innerwidth);
+  //   window.addEventListener("resize", handleResize);
+  //   window.addEventListener("orientationchange", handleResize);
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".lets-talk-section",
-          start: "top top",
-          end: "+=3000",
-          scrub: 1,
-          pin: true,
-          // markers: true,
-        },
-      });
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //     window.removeEventListener("orientationchange", handleResize);
+  //   };
+  // }, []);
 
-      tl.to({}, { duration: 0.05 });
+  // useLayoutEffect(() => {
+  //   setTimeout(() => {
+  //     ScrollTrigger.refresh();
+  //   }, 500);
+  // }, []);
 
-      tl.to(".contact-us", {
-        opacity: 0,
-        y: 200,
-        duration: 0.3,
-        ease: "power1.out",
-      });
+  // useEffect(() => {
+  //   const innerwidth = window.innerWidth;
+  //   console.log("innerwidth is = ", innerwidth);
 
-      tl.set(".contact-us", { pointerEvents: "none" });
+  //   if (innerwidth <= 580) {
+  //     console.log("innerwidth is less then 580", innerwidth);
 
-      tl.fromTo(
-        ".arrow",
-        { x: 0, rotate: 0 },
-        { x: 150, transformOrigin: "center", rotate: 90, ease: "none" }
-      );
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".lets-talk-section",
+  //         start: "top top",
+  //         end: "top -100%",
+  //         scrub: 1,
+  //         pin: true,
+  //         pinSpacing: true,
+  //         invalidateOnRefresh: true,
+  //         // markers: true,
+  //       },
+  //     });
 
-      tl.set(".scroll-txt", { display: "block" });
+  //     tl.to({}, { duration: 0.05 });
 
-      tl.fromTo(
-        ".scroll-txt",
-        { x: -300, opacity: 0 },
-        { x: 0, opacity: 1, ease: "power1.out" }
-      );
+  //     tl.to(".contact-us", {
+  //       opacity: 0,
+  //       y: 200,
+  //       duration: 0.3,
+  //       ease: "power1.out",
+  //     });
 
-      tl.to({}, { duration: 0.05 });
+  //     tl.set(".contact-us", { pointerEvents: "none" });
 
-      return () => {
-        ScrollTrigger.getAll().forEach((t) => t.kill());
-        tl.kill();
-      };
-    }
-  }, []);
+  //     tl.fromTo(
+  //       ".arrow",
+  //       { x: 0, rotate: 0 },
+  //       { x: 150, transformOrigin: "center", rotate: 90, ease: "none" }
+  //     );
+
+  //     tl.set(".scroll-txt", { display: "block" });
+
+  //     tl.fromTo(
+  //       ".scroll-txt",
+  //       { x: -300, opacity: 0 },
+  //       { x: 0, opacity: 1, ease: "power1.out" }
+  //     );
+
+  //     tl.to({}, { duration: 0.05 });
+
+  //     return () => {
+  //       ScrollTrigger.getAll().forEach((t) => t.kill());
+  //       tl.kill();
+  //     };
+  //   }
+  // }, []);
+
   useEffect(() => {
     const innerwidth = window.innerWidth;
     if (innerwidth > 580) {
@@ -72,6 +99,7 @@ const LetsTalk: React.FC = () => {
           end: "+=3000",
           scrub: 1,
           pin: true,
+          pinSpacing: true,
           // markers: true,
         },
       });
