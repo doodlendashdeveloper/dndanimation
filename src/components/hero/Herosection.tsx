@@ -20,6 +20,8 @@ const Herosection = () => {
         end: "+=2000",
         scrub: 1,
         pin: true,
+        anticipatePin: 1, // ✅ key fix
+        // pinSpacing: false, // optional
         // markers: true,
       },
     });
@@ -33,6 +35,11 @@ const Herosection = () => {
       },
       0
     );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+      tl.kill();
+    };
   }, []);
 
   return (
@@ -45,7 +52,7 @@ const Herosection = () => {
           loop
           autoPlay
           muted
-          playsinline
+          playsInline
         >
           <source src={bannervideo} type="video/mp4" />
         </video>

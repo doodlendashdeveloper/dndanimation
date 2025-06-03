@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./footertwo.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,13 +18,13 @@ const FooterTwo = ({ scrollToRef }) => {
     }
   };
 
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // alert(`The email you entered was: ${email}`);
-    setEmail("");
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   alert(`The email you entered was: ${email}`);
+  //   setEmail("");
+  // };
 
   // useEffect(() => {
   //   gsap.to(".theline", {
@@ -115,18 +115,11 @@ const FooterTwo = ({ scrollToRef }) => {
                   <span>socials</span>
                 </p>
               </li>
-              <li>
-                <a href="/">youtube</a>
-              </li>
+
               <li>
                 <a href="/">instagram</a>
               </li>
-              <li>
-                <a href="/">ticktok</a>
-              </li>
-              <li>
-                <a href="/">x</a>
-              </li>
+
               <li>
                 <a href="/">facebook</a>
               </li>
@@ -189,7 +182,7 @@ const FooterTwo = ({ scrollToRef }) => {
                 privacy
               </a>
               /{" "}
-              <a href="#" onClick={handleClick} className="blinks">
+              <a href="/#" onClick={handleClick} className="blinks">
                 up
               </a>
             </p>
