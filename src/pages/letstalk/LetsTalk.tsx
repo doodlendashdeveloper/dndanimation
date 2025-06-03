@@ -91,7 +91,7 @@ const LetsTalk: React.FC = () => {
   useEffect(() => {
     const innerwidth = window.innerWidth;
     if (innerwidth > 580) {
-      console.log("innerwidth is greater then 580", innerwidth);
+      // console.log("innerwidth is greater then 580", innerwidth);
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".lets-talk-section",

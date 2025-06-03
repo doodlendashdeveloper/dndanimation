@@ -73,7 +73,11 @@ const FooterTwo = ({ scrollToRef }) => {
             </ul>
           </div> */}
           <div className="dnd-footer-logo">
-            <img className="footerlogo" src={drop} alt="Image Not Available" />
+            <img
+              className="footerlogo"
+              src={drop}
+              alt="drops logo Not Available"
+            />
           </div>
           <div className="findus footer-col__copy--inline">
             <ul>
