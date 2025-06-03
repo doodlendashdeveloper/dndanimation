@@ -14,10 +14,11 @@ const Bannerfour = () => {
         className="springy-mobile"
         width="100%"
         height="100%"
-        loop
         autoPlay
         muted
-        playsinline
+        playsInline
+        loop
+        preload="auto"
       >
         <source src={springymobile} type="video/mp4" />
       </video>
