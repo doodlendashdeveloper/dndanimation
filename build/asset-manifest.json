@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.8d68a459.css",
-    "main.js": "./static/js/main.083b38a9.js",
+    "main.js": "./static/js/main.8ddfa527.js",
     "static/js/453.2c6ecf02.chunk.js": "./static/js/453.2c6ecf02.chunk.js",
     "static/media/portfoliovid.mp4": "./static/media/portfoliovid.8e6b718e0d4e52e1b4f3.mp4",
     "static/media/portfoliovidmobile.mp4": "./static/media/portfoliovidmobile.a22e85e0b25c220e789c.mp4",
@@ -32,11 +32,11 @@
     "static/media/Fontspring-DEMO-organetto-ultracndultrabold.otf": "./static/media/Fontspring-DEMO-organetto-ultracndultrabold.d239d91e5f45200452d6.otf",
     "index.html": "./index.html",
     "main.8d68a459.css.map": "./static/css/main.8d68a459.css.map",
-    "main.083b38a9.js.map": "./static/js/main.083b38a9.js.map",
+    "main.8ddfa527.js.map": "./static/js/main.8ddfa527.js.map",
     "453.2c6ecf02.chunk.js.map": "./static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d68a459.css",
-    "static/js/main.083b38a9.js"
+    "static/js/main.8ddfa527.js"
   ]
 }
