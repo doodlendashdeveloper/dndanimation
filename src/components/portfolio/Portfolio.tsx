@@ -187,6 +187,7 @@ const Portfolio = () => {
         loop
         autoPlay
         muted
+        playsInline
       >
         <source src={portfoliovid} type="video/mp4" />
       </video>
