@@ -13,7 +13,7 @@ const IdeasToLife = () => {
         loop
         autoPlay
         muted
-        playsinline
+        playsInline
       >
         <source src={ideastolife} type="video/mp4" />
       </video>
