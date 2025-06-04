@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "./Navbar.css";
 import logo from "../assets/images/Logo.png";
 import logoani from "../assets/images/logo_ani.gif";
 import MagicButton from "./magicbutton/MagicButton.tsx";
 import { motion } from "framer-motion";
 import SideBar from "./sidebar/SideBar.tsx";
+import AboutUs from "../pages/aboutus/AboutUs.tsx";
 
 const Navbar: React.FC = () => {
   const blinkvariants = {
@@ -28,6 +28,7 @@ const Navbar: React.FC = () => {
           <img src={logo} alt="WORK Logo" className="logo" />
         </a>
       </div>
+
       <ul className="navbar-links">
         <motion.li
           variants={blinkvariants}
@@ -49,6 +50,7 @@ const Navbar: React.FC = () => {
         >
           <NavLink
             to="/about"
+            element={<AboutUs />}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About

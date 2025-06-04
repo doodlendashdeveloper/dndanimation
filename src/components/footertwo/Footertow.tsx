@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footertwo.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -149,7 +150,7 @@ const FooterTwo = ({ scrollToRef }) => {
                 <a href="/">work</a>
               </li>
               <li>
-                <a href="/">about</a>
+                <Link to="/about">about</Link>
               </li>
               <li>
                 <a href="/">contact</a>

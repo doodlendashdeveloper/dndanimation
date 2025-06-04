@@ -1,0 +1,10 @@
+.about-page {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  background-color: red;
+  position: relative;
+  display: flex;
+}

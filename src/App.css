@@ -70,6 +70,25 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  display: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
