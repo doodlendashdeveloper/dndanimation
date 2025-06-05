@@ -7,7 +7,7 @@ import AboutUs from "./pages/aboutus/AboutUs.tsx";
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router basename="/dndanimation">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
