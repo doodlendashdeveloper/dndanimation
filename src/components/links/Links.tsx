@@ -37,6 +37,10 @@ const Links = () => {
       href: "/work",
     },
     {
+      heading: "Portfolio",
+      href: "/portfoliopage",
+    },
+    {
       heading: "Contact",
       href: "/contact",
     },

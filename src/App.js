@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar.tsx";
 import Home from "./pages/Home.tsx";
 import AboutUs from "./pages/aboutus/AboutUs.tsx";
 import "./App.css";
+import PortfolioPage from "./pages/portfolio/Portfoliopage.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,6 +96,14 @@ const AnimatedRoutes = () => {
             element={
               <PageWrapper>
                 <AboutUs />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/portfoliopage"
+            element={
+              <PageWrapper>
+                <PortfolioPage />
               </PageWrapper>
             }
           />

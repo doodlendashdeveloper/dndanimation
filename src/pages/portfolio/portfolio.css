@@ -1,0 +1,15 @@
+.portfolio-page {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  padding-top: 100px;
+}
+.portfolio-page img {
+  width: 100%;
+  object-fit: cover;
+}
