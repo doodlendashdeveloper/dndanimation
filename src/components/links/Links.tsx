@@ -38,7 +38,7 @@ const Links = () => {
     },
     {
       heading: "Portfolio",
-      href: "/portfoliopage",
+      href: "/portfolio",
     },
     {
       heading: "Contact",

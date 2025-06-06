@@ -15,6 +15,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "BasementGrotesque";
+  src: url("../src/assets/font/BasementGrotesque-Black_v1.202.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "ProximaNova";

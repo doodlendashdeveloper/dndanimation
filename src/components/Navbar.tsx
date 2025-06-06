@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           whileHover="animation"
         >
           <NavLink
-            to="/Portfoliopage"
+            to="/Portfolio"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Portfolio

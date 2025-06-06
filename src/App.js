@@ -20,8 +20,8 @@ gsap.registerPlugin(ScrollTrigger);
 const pageVariants = {
   initial: {
     opacity: 1,
-    y: "25lvh",
-    x: "-25lvh",
+    y: "100lvh",
+    x: "-75lvh",
     position: "absolute",
     width: "100%",
   },
@@ -100,7 +100,7 @@ const AnimatedRoutes = () => {
             }
           />
           <Route
-            path="/portfoliopage"
+            path="/portfolio"
             element={
               <PageWrapper>
                 <PortfolioPage />
