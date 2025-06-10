@@ -1,14 +1,15 @@
 import React from "react";
-import portfolioimg from "../../assets/images/portfolioimg.png";
+// import portfolioimg from "../../assets/images/portfolioimg.png";
 import Footertwo from "../../components/footertwo/Footertow.tsx";
 import portfoliologo from "../../assets/images/portfoliologo.png";
 import bluestarik from "../../assets/images/bluestarik.png";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import MagicButton from "../../components/magicbutton/MagicButton.tsx";
-import "./portfolio.css";
+import Portfolio from "../../components/portfolio/Portfolio.tsx";
+import "./portfoliopage.css";
 
-const Portfolio = () => {
+const Portfoliopage = () => {
   return (
     <div className="portfolio-main">
       <div className="portfolio-page">
@@ -56,7 +57,26 @@ const Portfolio = () => {
               </span>
             </Marquee>
           </div>
-          <div className="port-main-section"></div>
+          <div className="port-main-section">
+            <h1>WELCOME</h1>
+            <h1>
+              TO THE <span style={{ color: "#94FF00" }}>DND</span>
+            </h1>
+            <h3>
+              ANIMATION <span style={{ color: "#94FF00" }}>HALL</span> OF{" "}
+              <span
+                style={{
+                  color: "#000000",
+                  backgroundColor: "#94FF00",
+                  display: "inline-table",
+                  paddingRight: "0.7rem",
+                  paddingLeft: "0.3rem",
+                }}
+              >
+                WOW
+              </span>
+            </h3>
+          </div>
         </div>
         <div className="port-bottom">
           <div className="port-content">
@@ -79,6 +99,7 @@ const Portfolio = () => {
             </MagicButton>
           </div>
         </div>
+        <Portfolio />
         {/* <div className="img-section">
           <img src={portfolioimg} alt="" />
         </div> */}
@@ -88,4 +109,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Portfoliopage;

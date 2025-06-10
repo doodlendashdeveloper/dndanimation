@@ -67,7 +67,39 @@
   background-position: center;
   background-size: auto;
   background-color: #0000009c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
+.port-main-section h1:nth-child(1) {
+  color: white;
+  font-size: 13rem;
+  font-family: "antique";
+  line-height: 11rem;
+  letter-spacing: -1rem;
+  margin: 0;
+}
+.port-main-section h1:nth-child(2) {
+  color: white;
+  font-size: 10.6rem;
+  font-family: "antique";
+  line-height: 9rem;
+  letter-spacing: -0.77rem;
+  margin: 0;
+}
+.port-main-section h3 {
+  color: white;
+  font-size: 4.93rem;
+  margin: 0;
+  font-family: "antique";
+  line-height: 4rem;
+  letter-spacing: -0.46rem;
+  padding: 0;
+  margin-top: 0.9rem;
+}
+
 .portfolio-page .port-bottom {
   width: 100%;
   display: flex;
