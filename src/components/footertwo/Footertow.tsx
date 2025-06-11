@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FooterTwo = ({ scrollToRef }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Header ref called", scrollToRef);
+    // console.log("Header ref called", scrollToRef);
     if (scrollToRef?.current) {
       scrollToRef.current.scrollIntoView({ behavior: "smooth" });
     }
