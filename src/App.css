@@ -15,10 +15,60 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "BasementGrotesque";
+  src: url("../src/assets/font/BasementGrotesque-Black_v1.202.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Recoba";
+  src: url("../src/assets/font/Recoba.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PRISTINA";
+  src: url("../src/assets/font/PRISTINA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "tf2build";
+  src: url("../src/assets/font/tf2build.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "ProximaNova";
   src: url("../src/assets/font/ProximaNova-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../src//assets/font/ProximaNovaA-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../src//assets/font/ProximaNovaA-Extrabld.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "THEBOLDFONT";
+  src: url("../src//assets/font/THEBOLDFONT-FREEVERSION.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -123,3 +173,4 @@ body {
     transform: rotate(360deg);
   }
 }
+/* App.css */

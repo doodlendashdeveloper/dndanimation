@@ -56,9 +56,9 @@
   transition: all 0.3s linear;
 }
 .navbar-links .active::before {
-  width: 15px;
+  width: 0.8rem;
   content: "";
-  height: 15px;
+  height: 0.8rem;
   background-color: red;
   position: absolute;
   border-radius: 50%;
