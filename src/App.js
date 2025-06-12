@@ -50,10 +50,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
     const timeout = setTimeout(() => {
       ScrollTrigger.refresh(true);
     }, 1000);
-
-    return () => {
-      clearTimeout(timeout);
-    };
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
