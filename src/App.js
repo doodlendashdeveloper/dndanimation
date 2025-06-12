@@ -112,7 +112,7 @@ const AnimatedRoutes = () => {
 
 const App = () => {
   return (
-    <Router basename="/dndanimation">
+    <Router basename="/">
       <Navbar />
       <AnimatedRoutes />
     </Router>
