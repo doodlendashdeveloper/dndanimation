@@ -63,19 +63,6 @@ const Navbar: React.FC = () => {
           whileHover="animation"
         >
           <NavLink
-            to="/Work"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Work
-          </NavLink>
-        </motion.li>
-        <li>/</li>
-        <motion.li
-          variants={blinkvariants}
-          initial="start"
-          whileHover="animation"
-        >
-          <NavLink
             to="/Portfolio"
             className={({ isActive }) => (isActive ? "active" : "")}
           >

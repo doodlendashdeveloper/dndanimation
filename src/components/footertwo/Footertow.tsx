@@ -147,9 +147,6 @@ const FooterTwo = ({ scrollToRef }) => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/">work</a>
-              </li>
-              <li>
                 <Link to="/about">about</Link>
               </li>
               <li>

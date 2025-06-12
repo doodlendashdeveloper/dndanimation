@@ -48,8 +48,8 @@ const Links = () => {
 
   return (
     <motion.div className="links" variants={variants}>
-      {items.map((item) => (
-        <motion.div key={item} variants={itemVariants}>
+      {items.map((item, index) => (
+        <motion.div key={index} variants={itemVariants}>
           <NavLink
             to={item.href}
             className={({ isActive }) =>

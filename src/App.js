@@ -8,7 +8,6 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
 import Navbar from "./components/Navbar.tsx";
 import Home from "./pages/Home.tsx";
 import AboutUs from "./pages/aboutus/AboutUs.tsx";
