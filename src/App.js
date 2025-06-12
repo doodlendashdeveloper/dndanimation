@@ -13,6 +13,7 @@ import Home from "./pages/Home.tsx";
 import AboutUs from "./pages/aboutus/AboutUs.tsx";
 import "./App.css";
 import PortfolioPage from "./pages/portfolio/Portfoliopage.tsx";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,6 +113,7 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
     <Router basename="/dndanimation">
+      <ScrollToTop />
       <Navbar />
       <AnimatedRoutes />
     </Router>

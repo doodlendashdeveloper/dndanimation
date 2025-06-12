@@ -7,6 +7,7 @@ import MagicButton from "./magicbutton/MagicButton.tsx";
 import { motion } from "framer-motion";
 import SideBar from "./sidebar/SideBar.tsx";
 import AboutUs from "../pages/aboutus/AboutUs.tsx";
+import Home from "../pages/Home.tsx";
 
 const Navbar: React.FC = () => {
   const blinkvariants = {
@@ -23,10 +24,11 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar nav-sticky">
       <div className="nav-logo">
-        <a href="/">
+        <NavLink to="/" element={<Home />}>
           <img src={logoani} alt="not available" className="logo_ani" />
           <img src={logo} alt="WORK Logo" className="logo" />
-        </a>
+        </NavLink>
+        <a href="/dndanimation"></a>
       </div>
 
       <ul className="navbar-links">

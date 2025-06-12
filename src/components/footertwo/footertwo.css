@@ -40,7 +40,7 @@
   position: sticky;
   bottom: 0;
   background-color: #0042ff;
-  z-index: 1;
+  z-index: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
