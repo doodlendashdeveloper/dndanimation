@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dndanimation/static/css/main.c8326933.css",
-    "main.js": "/dndanimation/static/js/main.5207066f.js",
+    "main.js": "/dndanimation/static/js/main.ffabdd83.js",
     "static/js/453.2c6ecf02.chunk.js": "/dndanimation/static/js/453.2c6ecf02.chunk.js",
     "static/media/portfoliovid.mp4": "/dndanimation/static/media/portfoliovid.8e6b718e0d4e52e1b4f3.mp4",
     "static/media/portfoliovidmobile.mp4": "/dndanimation/static/media/portfoliovidmobile.a22e85e0b25c220e789c.mp4",
@@ -50,11 +50,11 @@
     "static/media/greenstar.png": "/dndanimation/static/media/greenstar.9921fe81a36f7ce52e19.png",
     "index.html": "/dndanimation/index.html",
     "main.c8326933.css.map": "/dndanimation/static/css/main.c8326933.css.map",
-    "main.5207066f.js.map": "/dndanimation/static/js/main.5207066f.js.map",
+    "main.ffabdd83.js.map": "/dndanimation/static/js/main.ffabdd83.js.map",
     "453.2c6ecf02.chunk.js.map": "/dndanimation/static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8326933.css",
-    "static/js/main.5207066f.js"
+    "static/js/main.ffabdd83.js"
   ]
 }

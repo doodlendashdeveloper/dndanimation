@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router, // ✅ use HashRouter here
   Routes,
   Route,
   useLocation,
@@ -112,7 +112,7 @@ const AnimatedRoutes = () => {
 
 const App = () => {
   return (
-    <Router basename="/dndanimation">
+    <Router> {/* ✅ No basename needed with HashRouter */}
       <Navbar />
       <AnimatedRoutes />
     </Router>
