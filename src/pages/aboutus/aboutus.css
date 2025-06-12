@@ -1,0 +1,474 @@
+.about-page {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  background-color: red;
+  position: relative;
+  display: flex;
+}
+.about-page img {
+  width: 100%;
+  object-fit: cover;
+}
+.about-top {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 3;
+  position: relative;
+  background-image: url(../../assets//images/topleft.png);
+  background-size: 7%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-top .top-right-pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  width: 50%;
+}
+.about-top .about-logo-sec {
+  width: 1580px;
+}
+.about-logo-inner h1 {
+  font-family: "ProximaNova";
+  font-size: 4.49rem;
+  line-height: 5rem;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.3rem;
+}
+.about-logo-sec .pixel-party {
+  width: 40%;
+  padding-top: 8rem;
+}
+.pixel-party h1 {
+  font-family: "ProximaNova";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.pixel-party p {
+  font-family: "ProximaNova";
+  font-weight: 500;
+  font-size: 1.09rem;
+  margin: 0;
+  line-height: 1.3rem;
+}
+.who-are-we {
+  width: 40%;
+  padding-top: 4rem;
+}
+.who-are-we h1 {
+  font-family: "ProximaNova";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+.who-are-we p {
+  font-family: "ProximaNova";
+  font-weight: 500;
+  font-size: 1.09rem;
+  margin: 0;
+  line-height: 1.3rem;
+}
+.about-logo-col {
+  display: flex;
+}
+.about-logo-col img.about-logo-ani {
+  width: 3.1rem;
+  object-fit: contain;
+}
+.about-logo {
+  width: 29rem;
+  object-fit: contain;
+}
+.about-top .yellowstar {
+  position: absolute;
+  top: 9%;
+  right: 29%;
+  z-index: 5;
+  width: 7.6rem;
+}
+.about-top .greenstar {
+  position: absolute;
+  top: 59%;
+  right: 35%;
+  z-index: 5;
+  width: 9.4rem;
+}
+.about-bottom {
+  display: flex;
+  width: 100%;
+  height: 48rem;
+  background-color: #fbfbfb;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url(../../assets/images/aboutbottombg.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 8rem;
+}
+.about-bottom .whatwedo {
+  width: 1580px;
+  /* background-color: blue; */
+  border-bottom: 3px solid #000d32;
+}
+.whatwedo h1 {
+  color: #000d32;
+  font-size: 4.1rem;
+  text-transform: uppercase;
+  font-family: "antique";
+  letter-spacing: -0.3rem;
+  margin: 0;
+  line-height: 3.6rem;
+}
+.about-bottom .bottom-content {
+  width: 1580px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.bottom-content .blue {
+  width: 2.5rem;
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+}
+.bottom-content .purple {
+  width: 2rem;
+  position: absolute;
+  top: 18%;
+  left: -4%;
+}
+.bottom-content .ele {
+  width: 9rem;
+  position: absolute;
+  bottom: 23%;
+  right: -6.8%;
+  z-index: 3;
+}
+.bottom-content .content-first-row {
+  display: flex;
+  position: relative;
+}
+.content-first-row .our-mission {
+  height: 23rem;
+  width: 52%;
+  /* background-color: #a70bff; */
+  /* border-radius: 0px 150px 0px 50px; */
+  /* border: 2px solid black; */
+  background-image: url(../../assets/images/ourmissionbg.png);
+  position: relative;
+  background-size: contain;
+  transform: rotate(5deg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.our-mission .mission-content {
+  width: 92.4%;
+  height: 91%;
+  /* background-color: #a70bff; */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 150px 0px 50px;
+  justify-content: center;
+  padding: 1rem 0rem 0rem 4rem;
+  gap: 1rem;
+}
+.mission-content h1 {
+  color: white;
+  font-family: "Recoba";
+  margin: 0;
+  font-size: 4.3rem;
+  font-weight: 100;
+}
+.mission-content h3 {
+  color: white;
+  font-family: "ProximaNova";
+  font-size: 2.36rem;
+  margin: 0;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.content-first-row .we-create {
+  width: 52%;
+  height: 18rem;
+
+  position: absolute;
+  right: 0%;
+  top: 22%;
+
+  background-image: url(../../assets/images/wecreatebg.png);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(355deg);
+}
+
+.we-create .we-create-content {
+  width: 80%;
+  height: 93%;
+  z-index: 4;
+  position: relative;
+  padding: 3rem 0rem 0rem 2.5rem;
+}
+.we-create-content h1 {
+  font-family: PRISTINA;
+  color: #d7ff2d;
+  margin: 0;
+  font-size: 5.3rem;
+  font-weight: 100;
+  line-height: 4rem;
+}
+.we-create-content h3 {
+  font-family: "ProximaNova";
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bottom-content .content-second-row {
+  display: flex;
+  position: relative;
+}
+.content-second-row .we-rock {
+  width: 50%;
+  height: 23rem;
+  background-image: url(../../assets/images/rockbg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(5deg);
+  position: absolute;
+  top: -70%;
+  left: 3.2%;
+}
+.we-rock .we-rock-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+.we-rock-content h1 {
+  font-family: tf2build;
+  color: #a70bff;
+  font-size: 4.3rem;
+  margin: 0;
+}
+.we-rock-content h3 {
+  font-size: 1.28rem;
+  margin: 0;
+  font-family: "ProximaNova";
+  font-weight: 500;
+}
+.content-second-row .story {
+  width: 50%;
+  height: 11.5rem;
+  background-image: url(../../assets/images/storybg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(358deg);
+  position: relative;
+  top: -8%;
+  right: -49.1%;
+}
+.story .story-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 4rem;
+}
+.story-content h1 {
+  font-family: THEBOLDFONT;
+  color: #00217e;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.story-content h3:nth-child(1) {
+  font-family: "ProximaNova";
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+}
+.story-content .but {
+  font-family: "ProximaNova";
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -0.4rem;
+  letter-spacing: 0.57rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .about-top .about-logo-sec {
+    width: 1330px;
+  }
+  .about-bottom .whatwedo {
+    width: 1330px;
+  }
+  .about-bottom .bottom-content {
+    width: 1330px;
+  }
+  .about-top .greenstar {
+    top: 57%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .about-top .about-logo-sec {
+    width: 1180px;
+  }
+  .about-bottom .whatwedo {
+    width: 1180px;
+  }
+  .about-bottom .bottom-content {
+    width: 1180px;
+  }
+  .about-top .greenstar {
+    top: 51%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .about-top .about-logo-sec {
+    width: 1130px;
+  }
+  .about-bottom .whatwedo {
+    width: 1130px;
+  }
+  .about-bottom .bottom-content {
+    width: 1130px;
+  }
+  .about-top .greenstar {
+    top: 56%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .about-top .about-logo-sec {
+    width: 1065px;
+  }
+  .about-bottom .whatwedo {
+    width: 1065px;
+  }
+  .about-bottom .bottom-content {
+    width: 1065px;
+  }
+  .about-top .greenstar {
+    top: 51%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-top .about-logo-sec {
+    width: 850px;
+  }
+  .about-bottom .whatwedo {
+    width: 850px;
+  }
+  .about-bottom .bottom-content {
+    width: 850px;
+  }
+  .about-top .greenstar {
+    top: 51%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about-top .about-logo-sec {
+    width: 810px;
+  }
+  .about-bottom .whatwedo {
+    width: 810px;
+  }
+  .about-bottom .bottom-content {
+    width: 810px;
+  }
+  .about-top .greenstar {
+    top: 52%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-top .about-logo-sec {
+    width: 650px;
+  }
+  .about-bottom .whatwedo {
+    width: 650px;
+  }
+  .about-bottom .bottom-content {
+    width: 650px;
+  }
+  .about-top .greenstar {
+    top: 43%;
+    right: 35%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-top .about-logo-sec {
+    width: 640px;
+  }
+  .about-bottom .whatwedo {
+    width: 640px;
+  }
+  .about-bottom .bottom-content {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+}
+
+@media only screen and (max-width: 580px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 360px) {
+}

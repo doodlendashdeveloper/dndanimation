@@ -20,8 +20,9 @@ const Herosection = () => {
         end: "+=2000",
         scrub: 1,
         pin: true,
-        anticipatePin: 1, // ✅ key fix
-        // pinSpacing: false, // optional
+        anticipatePin: 1,
+        screenX: 0,
+        // pinSpacing: true,
         // markers: true,
       },
     });

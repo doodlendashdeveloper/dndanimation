@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
+import { NavLink } from "react-router-dom";
+import "./links.css";
 
 const variants = {
   open: {
@@ -22,23 +23,41 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["Home", "About", "Work", "Contact"];
+  const items = [
+    {
+      heading: "Home",
+      href: "/",
+    },
+    {
+      heading: "About",
+      href: "/about",
+    },
+    {
+      heading: "Work",
+      href: "/work",
+    },
+    {
+      heading: "Portfolio",
+      href: "/portfolio",
+    },
+    {
+      heading: "Contact",
+      href: "/contact",
+    },
+  ];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.div key={item} variants={itemVariants}>
-          <ScrollLink
-            to={item}
-            spy={true}
-            smooth={true}
-            duration={500}
-            onClick={() => {
-              // scroll.scrollToTop(); // optional
-            }}
+          <NavLink
+            to={item.href}
+            className={({ isActive }) =>
+              `mob-menu-link ${isActive ? "active" : ""}`
+            }
           >
-            {item}
-          </ScrollLink>
+            {item.heading}
+          </NavLink>
         </motion.div>
       ))}
     </motion.div>

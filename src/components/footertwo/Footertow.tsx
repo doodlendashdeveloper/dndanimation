@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footertwo.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FooterTwo = ({ scrollToRef }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Header ref called", scrollToRef);
+    // console.log("Header ref called", scrollToRef);
     if (scrollToRef?.current) {
       scrollToRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -73,7 +74,11 @@ const FooterTwo = ({ scrollToRef }) => {
             </ul>
           </div> */}
           <div className="dnd-footer-logo">
-            <img className="footerlogo" src={drop} alt="Image Not Available" />
+            <img
+              className="footerlogo"
+              src={drop}
+              alt="drops logo Not Available"
+            />
           </div>
           <div className="findus footer-col__copy--inline">
             <ul>
@@ -139,13 +144,16 @@ const FooterTwo = ({ scrollToRef }) => {
                 </p>
               </li>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a href="/">work</a>
               </li>
               <li>
-                <a href="/">about</a>
+                <Link to="/about">about</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
                 <a href="/">contact</a>
