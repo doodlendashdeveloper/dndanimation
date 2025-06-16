@@ -14,6 +14,7 @@ import AboutUs from "./pages/aboutus/AboutUs.tsx";
 import "./App.css";
 import PortfolioPage from "./pages/portfolio/Portfoliopage.tsx";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop.tsx";
+import ContactPage from "./pages/contactpage/ContactPage.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,6 +102,14 @@ const AnimatedRoutes = () => {
             element={
               <PageWrapper>
                 <PortfolioPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PageWrapper>
+                <ContactPage />
               </PageWrapper>
             }
           />

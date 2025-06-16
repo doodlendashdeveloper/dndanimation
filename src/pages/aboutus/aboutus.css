@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-animation-fill-mode: initial;
 }
 .about-top .top-right-pic {
   position: absolute;
@@ -456,7 +457,7 @@
 
 @media only screen and (max-width: 690px) {
   .about-top {
-    height: 50vh;
+    height: 55vh;
     background-position: center left;
   }
   .about-logo-inner h1 {

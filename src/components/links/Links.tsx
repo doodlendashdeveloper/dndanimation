@@ -38,10 +38,6 @@ const Links = ({
       href: "/about",
     },
     {
-      heading: "Work",
-      href: "/work",
-    },
-    {
       heading: "Portfolio",
       href: "/portfolio",
     },

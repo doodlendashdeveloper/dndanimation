@@ -108,6 +108,12 @@
   .contact-container {
     max-width: 46rem;
   }
+  .contact-description {
+    font-size: 2rem;
+  }
+  .contact-title {
+    font-size: 5.3rem;
+  }
 }
 
 @media only screen and (max-width: 580px) {
