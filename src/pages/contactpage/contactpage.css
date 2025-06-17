@@ -141,3 +141,74 @@
   color: white;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 690px) {
+  .contactpage {
+    padding-top: 17rem;
+  }
+  .heading-section h6 {
+    font-size: 4.2rem;
+  }
+  .heading-section h1 {
+    font-size: 5rem;
+  }
+  .heading-section p {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .contactpage .con-section {
+    flex-direction: column;
+  }
+  .con-section .info-section {
+    width: 100%;
+
+    padding-bottom: 3rem;
+  }
+  .info-section h3 {
+    font-size: 4.3rem;
+  }
+  .info-section ul {
+    gap: 2rem;
+    padding: 0;
+  }
+  .info-section ul li .infos span {
+    padding-left: 1.5rem;
+    font-size: 4.1rem;
+  }
+  .info-section ul li .infos svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .con-section .con-form-section {
+    width: 100%;
+  }
+  .con-form-section form input {
+    height: 8.5rem;
+    border-radius: 3rem;
+    margin-top: 4rem;
+    padding-left: 4rem;
+
+    font-size: 3.8rem;
+  }
+
+  .con-form-section form textarea {
+    height: 22.5rem;
+    border-radius: 3rem;
+    margin-top: 4rem;
+    padding: 1rem 4rem;
+
+    font-size: 3.8rem;
+  }
+  .con-form-section form button {
+    width: 26rem;
+    height: 8rem;
+
+    border-radius: 3rem;
+    margin-top: 3rem;
+
+    font-size: 3.8rem;
+  }
+  iframe {
+    height: 250px;
+  }
+}
