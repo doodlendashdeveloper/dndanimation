@@ -7,11 +7,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 7rem;
+  padding: 7rem 0;
   margin: 0;
 }
+.contactpage .darkbluebg {
+  width: 17.5%;
+  position: absolute;
+  z-index: 5;
+  right: -0.03rem;
+  bottom: 0;
+}
+.contactpage .cont-wrap {
+  width: 92.3rem;
+  background-color: #0042ff;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 5rem 15rem 5rem 3rem;
+  border-radius: 2rem;
+  position: relative;
+}
+.cont-wrap .darkblue {
+  width: 9rem;
+  position: absolute;
+  right: 3rem;
+  top: -2.8rem;
+}
 .contactpage .heading-section {
-  width: 82.3rem;
+  width: 100%;
+  display: flex;
+  padding-bottom: 4rem;
+}
+.heading-section .ttl {
+  width: 50%;
+}
+.heading-section .para {
+  width: 50%;
+  padding-left: 3rem;
+  display: flex;
+  align-items: flex-end;
 }
 .heading-section h6 {
   font-size: 1.2rem;
@@ -20,21 +54,28 @@
 }
 
 .heading-section h1 {
-  font-family: "BasementGrotesque";
+  font-family: "CocoSharp";
+  text-transform: uppercase;
   margin: 0;
-  font-size: 2rem;
+  font-size: 4.1rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  color: white;
 }
 
-.heading-section p {
-  font-family: "ProximaNova";
-  font-size: 1rem;
-  width: 50%;
+.heading-section .para p {
+  font-family: "ClaireHand";
+  font-size: 1.5rem;
+  color: #efefef;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5rem;
 }
 .contactpage .con-section {
-  width: 82.3rem;
+  width: 100%;
   display: flex;
   margin: 0;
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
 }
 .con-section .info-section {
   width: 50%;
@@ -43,6 +84,8 @@
   padding: 0;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
 }
 .info-section h3 {
   font-family: "BasementGrotesque";
@@ -55,7 +98,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  padding: 0;
 }
 
 .info-section ul li {
@@ -63,17 +106,35 @@
 }
 
 .info-section ul li .infos {
+  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
   width: max-content;
 }
 
-.info-section ul li .infos span {
-  color: black;
+.info-section ul li .infos .mail {
+  color: white;
   font-family: "ProximaNova";
-  padding-left: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.info-section ul li .infos .phone {
+  color: white;
+  font-family: "ProximaNova";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.info-section ul li .infos .location {
+  color: white;
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
 }
 
 .info-section ul li .infos svg {
@@ -85,48 +146,58 @@
 .con-section .con-form-section {
   width: 50%;
   margin: 0;
-  padding: 0;
+  padding-left: 3rem;
 }
 .contactpage .map-container {
-  width: 82.3rem;
+  width: 100%;
   margin: 0;
-  padding: 2rem 0 5rem 0;
+  /* padding: 2rem 0 5rem 0; */
 }
 .con-form-section form input {
   width: 100%;
   border: none;
   background-color: #f1f1f1;
-  height: 2.5rem;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  padding-left: 2rem;
+  height: 2rem;
+  /* border-radius: 1rem; */
+  margin-top: 1.4rem;
+  padding-left: 1rem;
   color: black;
   font-family: "ProximaNova";
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
   box-sizing: border-box;
-  outline: 2px solid #f1f1f1;
+  outline: none;
+  border: inset;
+  border-color: white;
 }
 .con-form-section form input:focus-visible {
-  outline: 2px solid #eb1063;
-  transition: outline 0.5s linear;
+  outline: none;
+  border-top-color: #94ff00;
+  border-left-color: #94ff00;
+  transition: all 0.5s linear;
 }
 .con-form-section form textarea {
   width: 100%;
   border: none;
   background-color: #f1f1f1;
   height: 7.5rem;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+  /* border-radius: 1rem; */
+  margin-top: 1.4rem;
+  padding: 1rem;
   color: black;
   font-family: "ProximaNova";
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
   box-sizing: border-box;
-  outline: 2px solid #f1f1f1;
+  outline: none;
+  border: inset;
+  border-color: white;
 }
 .con-form-section form textarea:focus-visible {
-  outline: 2px solid #eb1063;
-  transition: outline 0.5s linear;
+  outline: none;
+  border-top-color: #94ff00;
+  border-left-color: #94ff00;
+  transition: all 0.5s linear;
 }
 .con-form-section form button {
   width: 10rem;
@@ -137,8 +208,8 @@
   font-family: "ProximaNova";
   font-weight: 500;
   font-size: 0.8rem;
-  background-color: #eb1063;
-  color: white;
+  background-color: #94ff00;
+  color: black;
   cursor: pointer;
 }
 
@@ -207,6 +278,12 @@
     margin-top: 3rem;
 
     font-size: 3.8rem;
+  }
+  form .status {
+    margin: 0;
+    padding-top: 1rem;
+    color: white;
+    font-family: "ProximaNova";
   }
   iframe {
     height: 250px;

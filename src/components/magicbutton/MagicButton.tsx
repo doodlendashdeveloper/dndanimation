@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import "./MagicButton.css";
 
 const MagicButton = ({ children, link, classname }) => {
@@ -11,8 +12,9 @@ const MagicButton = ({ children, link, classname }) => {
     btnRef.current.style.setProperty("--x", `${x}px`);
     btnRef.current.style.setProperty("--y", `${y}px`);
   };
+  const isTelLink = link.startsWith("tel:");
 
-  return (
+  return isTelLink ? (
     <a
       href={link}
       className={`hover-btn ${classname}`}
@@ -22,6 +24,16 @@ const MagicButton = ({ children, link, classname }) => {
     >
       <span className="hover-btn-text">{children}</span>
     </a>
+  ) : (
+    <Link
+      to={link}
+      className={`hover-btn ${classname}`}
+      ref={btnRef}
+      onMouseMove={setCoords}
+      onMouseLeave={setCoords}
+    >
+      <span className="hover-btn-text">{children}</span>
+    </Link>
   );
 };
 
