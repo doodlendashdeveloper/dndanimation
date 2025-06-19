@@ -1,0 +1,318 @@
+.contactpage {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+  margin: 0;
+}
+.contactpage .darkbluebg {
+  width: 17.5%;
+  position: absolute;
+  z-index: 5;
+  right: -0.03rem;
+  bottom: 0;
+}
+.contactpage .cont-wrap {
+  width: 92.3rem;
+  background-color: #0042ff;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 5rem 15rem 5rem 3rem;
+  border-radius: 2rem;
+  position: relative;
+}
+.cont-wrap .darkblue {
+  width: 9rem;
+  position: absolute;
+  right: 3rem;
+  top: -2.8rem;
+}
+.contactpage .heading-section {
+  width: 100%;
+  display: flex;
+  padding-bottom: 4rem;
+}
+.heading-section .ttl {
+  width: 50%;
+}
+.heading-section .para {
+  width: 50%;
+  padding-left: 3rem;
+  display: flex;
+  align-items: flex-end;
+}
+.heading-section h6 {
+  font-size: 1.2rem;
+  font-family: ProximaNova;
+  margin: 0;
+}
+
+.heading-section h1 {
+  font-family: "CocoSharp";
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4.1rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  color: white;
+}
+
+.heading-section .para p {
+  font-family: "ClaireHand";
+  font-size: 1.5rem;
+  color: #efefef;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5rem;
+}
+.contactpage .con-section {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  /* padding: 3rem 0; */
+}
+.con-section .info-section {
+  width: 50%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+}
+.info-section h3 {
+  font-family: "BasementGrotesque";
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.info-section ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.info-section ul li {
+  list-style-type: none;
+}
+
+.info-section ul li .infos {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.info-section ul li .infos .mail {
+  color: white;
+  font-family: "ProximaNova";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.info-section ul li .infos .phone {
+  font-size: 3.5rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  color: white !important;
+}
+
+.info-section ul li .infos .location {
+  color: white;
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.info-section ul li .infos svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #eb1063;
+  fill: #eb1063;
+}
+.con-section .con-form-section {
+  width: 50%;
+  margin: 0;
+  padding-left: 3rem;
+}
+.contactpage .map-container {
+  width: 100%;
+  margin: 0;
+  /* padding: 2rem 0 5rem 0; */
+}
+.con-form-section form input {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  height: 2rem;
+  /* border-radius: 1rem; */
+  margin-top: 1.4rem;
+  padding-left: 1rem;
+  color: black;
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  outline: none;
+  border: inset;
+  border-color: white;
+}
+.con-form-section form input:focus-visible {
+  outline: none;
+  border-top-color: #94ff00;
+  border-left-color: #94ff00;
+  transition: all 0.5s linear;
+}
+.con-form-section form textarea {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  height: 7.5rem;
+  /* border-radius: 1rem; */
+  margin-top: 1.4rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  outline: none;
+  border: inset;
+  border-color: white;
+}
+.con-form-section form textarea:focus-visible {
+  outline: none;
+  border-top-color: #94ff00;
+  border-left-color: #94ff00;
+  transition: all 0.5s linear;
+}
+.con-form-section form button {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-family: "ProximaNova";
+  font-weight: 500;
+  font-size: 0.8rem;
+  background-color: #94ff00;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 690px) {
+  .contactpage {
+    padding-top: 17rem;
+  }
+  .contactpage .cont-wrap {
+    padding: 5rem;
+  }
+  .heading-section h6 {
+    font-size: 4.2rem;
+  }
+  .heading-section .ttl h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .heading-section .para p {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .contactpage .con-section {
+    flex-direction: column;
+  }
+  .con-section .info-section {
+    width: 100%;
+
+    padding-bottom: 3rem;
+  }
+  .info-section h3 {
+    font-size: 4.3rem;
+  }
+  .info-section ul {
+    padding: 0;
+  }
+  .info-section ul li .infos .mail {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+    padding-bottom: 1rem;
+  }
+  .info-section ul li .infos svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .con-section .con-form-section {
+    width: 100%;
+    padding-left: 0;
+  }
+  .con-form-section form input {
+    height: 8.5rem;
+    margin-top: 4rem;
+    padding-left: 4rem;
+    font-size: 3.8rem;
+  }
+
+  .con-form-section form textarea {
+    height: 22.5rem;
+    margin-top: 4rem;
+    padding: 1rem 4rem;
+    font-size: 3.8rem;
+  }
+  .con-form-section form button {
+    width: 26rem;
+    height: 8rem;
+    margin-top: 3rem;
+    font-size: 3.8rem;
+  }
+  form .status {
+    margin: 0;
+    padding-top: 1rem;
+    color: white;
+    font-family: "ProximaNova";
+  }
+  iframe {
+    height: 250px;
+  }
+  .contactpage .heading-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .heading-section .ttl {
+    width: 100%;
+  }
+  .heading-section .para {
+    width: 100%;
+    padding-left: 0;
+  }
+  .info-section ul li .infos .location {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .contactpage .darkbluebg {
+    display: none;
+  }
+  .cont-wrap .darkblue {
+    width: 13rem;
+  }
+  form .status {
+    font-size: 3rem;
+    margin: 0px;
+    padding-top: 3.4rem;
+    color: white;
+    font-family: ProximaNova;
+    line-height: 2.6rem;
+    font-size: 3rem;
+  }
+}

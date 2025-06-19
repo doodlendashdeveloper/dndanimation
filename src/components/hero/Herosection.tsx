@@ -54,6 +54,7 @@ const Herosection = () => {
           autoPlay
           muted
           playsInline
+          preload="auto"
         >
           <source src={bannervideo} type="video/mp4" />
         </video>

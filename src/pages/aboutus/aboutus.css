@@ -16,7 +16,7 @@
   width: 100%;
   height: 100vh;
   background-color: white;
-  z-index: 3;
+  z-index: 999;
   position: relative;
   background-image: url(../../assets//images/topleft.png);
   background-size: 7%;
@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-animation-fill-mode: initial;
 }
 .about-top .top-right-pic {
   position: absolute;
@@ -35,7 +36,7 @@
   width: 50%;
 }
 .about-top .about-logo-sec {
-  width: 1580px;
+  width: 82.3rem;
 }
 .about-logo-inner h1 {
   font-family: "ProximaNova";
@@ -126,7 +127,7 @@
   padding-top: 8rem;
 }
 .about-bottom .whatwedo {
-  width: 1580px;
+  width: 82.3rem;
   /* background-color: blue; */
   border-bottom: 3px solid #000d32;
 }
@@ -140,7 +141,7 @@
   line-height: 3.6rem;
 }
 .about-bottom .bottom-content {
-  width: 1580px;
+  width: 82.3rem;
   /* background-color: blue; */
   display: flex;
   flex-direction: column;
@@ -190,7 +191,6 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  border-radius: 0px 150px 0px 50px;
   justify-content: center;
   padding: 1rem 0rem 0rem 4rem;
   gap: 1rem;
@@ -332,7 +332,7 @@
 }
 
 @media only screen and (max-width: 1600px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 1330px;
   }
   .about-bottom .whatwedo {
@@ -340,7 +340,7 @@
   }
   .about-bottom .bottom-content {
     width: 1330px;
-  }
+  } */
   .about-top .greenstar {
     top: 57%;
     right: 35%;
@@ -348,7 +348,7 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 1180px;
   }
   .about-bottom .whatwedo {
@@ -356,7 +356,7 @@
   }
   .about-bottom .bottom-content {
     width: 1180px;
-  }
+  } */
   .about-top .greenstar {
     top: 51%;
     right: 35%;
@@ -364,7 +364,7 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 1130px;
   }
   .about-bottom .whatwedo {
@@ -372,7 +372,7 @@
   }
   .about-bottom .bottom-content {
     width: 1130px;
-  }
+  } */
   .about-top .greenstar {
     top: 56%;
     right: 35%;
@@ -380,7 +380,7 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 1065px;
   }
   .about-bottom .whatwedo {
@@ -388,7 +388,7 @@
   }
   .about-bottom .bottom-content {
     width: 1065px;
-  }
+  } */
   .about-top .greenstar {
     top: 51%;
     right: 35%;
@@ -396,7 +396,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 850px;
   }
   .about-bottom .whatwedo {
@@ -404,7 +404,7 @@
   }
   .about-bottom .bottom-content {
     width: 850px;
-  }
+  } */
   .about-top .greenstar {
     top: 51%;
     right: 35%;
@@ -412,7 +412,7 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 810px;
   }
   .about-bottom .whatwedo {
@@ -420,7 +420,7 @@
   }
   .about-bottom .bottom-content {
     width: 810px;
-  }
+  } */
   .about-top .greenstar {
     top: 52%;
     right: 35%;
@@ -428,7 +428,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 650px;
   }
   .about-bottom .whatwedo {
@@ -436,7 +436,7 @@
   }
   .about-bottom .bottom-content {
     width: 650px;
-  }
+  } */
   .about-top .greenstar {
     top: 43%;
     right: 35%;
@@ -444,7 +444,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .about-top .about-logo-sec {
+  /* .about-top .about-logo-sec {
     width: 640px;
   }
   .about-bottom .whatwedo {
@@ -452,10 +452,125 @@
   }
   .about-bottom .bottom-content {
     width: 640px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 690px) {
+  .about-top {
+    height: 55vh;
+    background-position: center left;
+  }
+  .about-logo-inner h1 {
+    font-size: 5.49rem;
+    line-height: 5rem;
+  }
+  .about-logo-col img.about-logo-ani {
+    width: 4.1rem;
+  }
+  .about-logo {
+    width: 35rem;
+  }
+  .about-logo-sec .pixel-party {
+    width: 55%;
+  }
+  .pixel-party h1 {
+    font-size: 2.9rem;
+    line-height: 2.5rem;
+  }
+  .pixel-party p {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    z-index: 6;
+    position: relative;
+  }
+  .who-are-we {
+    width: 58%;
+  }
+  .who-are-we h1 {
+    font-size: 2.9rem;
+    line-height: 2.5rem;
+  }
+  .who-are-we p {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    z-index: 6;
+    position: relative;
+  }
+  .about-top .greenstar {
+    top: 35%;
+  }
+  .about-top .top-right-pic {
+    width: 55%;
+  }
+
+  .about-bottom {
+    height: 138rem;
+  }
+  .whatwedo h1 {
+    font-size: 5.1rem;
+
+    line-height: 4.6rem;
+  }
+  .content-first-row .our-mission {
+    height: 44rem;
+    width: 100%;
+  }
+  .our-mission .mission-content {
+    height: 95%;
+    padding: 1rem 0rem 0rem 8rem;
+  }
+  .mission-content h1 {
+    font-size: 8.3rem;
+  }
+  .mission-content h3 {
+    font-size: 4.36rem;
+    line-height: 4.4rem;
+  }
+  .content-first-row .we-create {
+    width: 100%;
+    height: 34rem;
+    top: 71%;
+  }
+  .we-create .we-create-content {
+    width: 93%;
+    padding: 7rem 0rem 0rem 3.5rem;
+  }
+  .we-create-content h1 {
+    font-size: 11.3rem;
+    line-height: 10rem;
+  }
+  .we-create-content h3 {
+    font-size: 2.3rem;
+  }
+  .content-second-row .we-rock {
+    width: 100%;
+    height: 45rem;
+
+    transform: rotate(359deg);
+    top: 147%;
+    z-index: 5;
+  }
+  .we-rock-content h1 {
+    font-size: 8.3rem;
+  }
+  .we-rock-content h3 {
+    font-size: 2.5rem;
+  }
+  .content-second-row .story {
+    width: 100%;
+    height: 24.5rem;
+    top: 85%;
+    right: 0%;
+  }
+  .story-content h3:nth-child(1) {
+    font-size: 3.8rem;
+  }
+  .story-content h1 {
+    font-size: 5.5rem;
+  }
+  .story-content .but {
+    font-size: 4.5rem;
+  }
 }
 
 @media only screen and (max-width: 580px) {

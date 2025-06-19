@@ -8,12 +8,13 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
 import Navbar from "./components/Navbar.tsx";
 import Home from "./pages/Home.tsx";
 import AboutUs from "./pages/aboutus/AboutUs.tsx";
 import "./App.css";
 import PortfolioPage from "./pages/portfolio/Portfoliopage.tsx";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop.tsx";
+import ContactPage from "./pages/contactpage/ContactPage.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,6 +105,14 @@ const AnimatedRoutes = () => {
               </PageWrapper>
             }
           />
+          <Route
+            path="/contact"
+            element={
+              <PageWrapper>
+                <ContactPage />
+              </PageWrapper>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </div>
@@ -113,6 +122,7 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
     <Router basename="/dndanimation">
+      <ScrollToTop />
       <Navbar />
       <AnimatedRoutes />
     </Router>
