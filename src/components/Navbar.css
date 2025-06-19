@@ -50,13 +50,18 @@
   font-weight: normal;
 }
 
+.nav-item .slash {
+  padding-right: 1.3rem;
+  box-sizing: border-box;
+}
+
 .nav-indicator {
   width: 0.8rem;
   height: 0.8rem;
   background-color: red;
   border-radius: 50%;
   position: absolute;
-  left: 0;
+  left: 1.7rem;
   top: 30%;
   /* transform: translateY(-50%); */
 }

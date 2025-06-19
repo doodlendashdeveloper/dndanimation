@@ -9,6 +9,10 @@
   align-items: center;
   padding: 7rem 0;
   margin: 0;
+  background-image: url(../../assets/images/contbg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contactpage .darkbluebg {
   width: 17.5%;
@@ -211,6 +215,11 @@
   color: black;
   cursor: pointer;
 }
+.con-form-section form button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s linear;
+}
 
 @media only screen and (max-width: 690px) {
   .contactpage {
@@ -314,5 +323,10 @@
     font-family: ProximaNova;
     line-height: 2.6rem;
     font-size: 3rem;
+  }
+  .info-section ul li .infos .phone {
+    font-size: 6rem;
+    line-height: 3.8rem;
+    padding-bottom: 4rem;
   }
 }
