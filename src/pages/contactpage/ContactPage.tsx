@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import darkbluebg from "../../assets/images/darkbluebg.png";
 import darkblue from "../../assets/images/darkblue.png";
 // import { FaEnvelope, FaMobile, FaMapMarkerAlt } from "react-icons/fa";
@@ -8,6 +8,22 @@ import "./contactpage.css";
 import FooterTwo from "../../components/footertwo/Footertow.tsx";
 
 const ContactPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 690);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -154,9 +170,11 @@ const ContactPage = () => {
                 />
                 <button type="submit">Submit</button>
                 <p
+                  className="status"
                   style={{
+                    fontSize: isMobile ? "3rem" : "1rem",
                     margin: 0,
-                    paddingTop: "1.4rem",
+                    paddingTop: isMobile ? "3.4rem" : "1.4rem",
                     color: "white",
                     fontFamily: "ProximaNova",
                     lineHeight: "0.6rem",

@@ -121,12 +121,11 @@
   font-weight: 500;
 }
 .info-section ul li .infos .phone {
-  color: white;
-  font-family: "ProximaNova";
-  font-size: 2rem;
-  line-height: 1.8rem;
+  font-size: 3.5rem;
+  line-height: 2.8rem;
   font-weight: 500;
   padding-bottom: 2rem;
+  color: white !important;
 }
 
 .info-section ul li .infos .location {
@@ -217,15 +216,19 @@
   .contactpage {
     padding-top: 17rem;
   }
+  .contactpage .cont-wrap {
+    padding: 5rem;
+  }
   .heading-section h6 {
     font-size: 4.2rem;
   }
-  .heading-section h1 {
-    font-size: 5rem;
+  .heading-section .ttl h1 {
+    font-size: 6rem;
+    line-height: 6rem;
   }
-  .heading-section p {
-    font-size: 4rem;
-    width: 100%;
+  .heading-section .para p {
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
   .contactpage .con-section {
     flex-direction: column;
@@ -239,12 +242,12 @@
     font-size: 4.3rem;
   }
   .info-section ul {
-    gap: 2rem;
     padding: 0;
   }
-  .info-section ul li .infos span {
-    padding-left: 1.5rem;
-    font-size: 4.1rem;
+  .info-section ul li .infos .mail {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+    padding-bottom: 1rem;
   }
   .info-section ul li .infos svg {
     width: 3.5rem;
@@ -252,31 +255,25 @@
   }
   .con-section .con-form-section {
     width: 100%;
+    padding-left: 0;
   }
   .con-form-section form input {
     height: 8.5rem;
-    border-radius: 3rem;
     margin-top: 4rem;
     padding-left: 4rem;
-
     font-size: 3.8rem;
   }
 
   .con-form-section form textarea {
     height: 22.5rem;
-    border-radius: 3rem;
     margin-top: 4rem;
     padding: 1rem 4rem;
-
     font-size: 3.8rem;
   }
   .con-form-section form button {
     width: 26rem;
     height: 8rem;
-
-    border-radius: 3rem;
     margin-top: 3rem;
-
     font-size: 3.8rem;
   }
   form .status {
@@ -287,5 +284,35 @@
   }
   iframe {
     height: 250px;
+  }
+  .contactpage .heading-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .heading-section .ttl {
+    width: 100%;
+  }
+  .heading-section .para {
+    width: 100%;
+    padding-left: 0;
+  }
+  .info-section ul li .infos .location {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .contactpage .darkbluebg {
+    display: none;
+  }
+  .cont-wrap .darkblue {
+    width: 13rem;
+  }
+  form .status {
+    font-size: 3rem;
+    margin: 0px;
+    padding-top: 3.4rem;
+    color: white;
+    font-family: ProximaNova;
+    line-height: 2.6rem;
+    font-size: 3rem;
   }
 }
