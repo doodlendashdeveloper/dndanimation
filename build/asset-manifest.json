@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a55fb7d.css",
-    "main.js": "/static/js/main.7b16f1f7.js",
+    "main.css": "/static/css/main.5e23745a.css",
+    "main.js": "/static/js/main.11a1afe0.js",
     "static/js/453.2c6ecf02.chunk.js": "/static/js/453.2c6ecf02.chunk.js",
     "static/media/portfoliovid.mp4": "/static/media/portfoliovid.8e6b718e0d4e52e1b4f3.mp4",
     "static/media/portfoliovidmobile.mp4": "/static/media/portfoliovidmobile.a22e85e0b25c220e789c.mp4",
@@ -15,17 +15,25 @@
     "static/media/bg.jpg": "/static/media/bg.25f5bab2ed3cc9ba448b.jpg",
     "static/media/toppic.jpg": "/static/media/toppic.7b1c7e20b43525152012.jpg",
     "static/media/toptext.png": "/static/media/toptext.1a37f6d3964ec3d5cda0.png",
+    "static/media/Coco-Sharp-Extrabold-trial.ttf": "/static/media/Coco-Sharp-Extrabold-trial.247762e1c85e6abebb1f.ttf",
+    "static/media/Coco-Sharp-Bold-trial.ttf": "/static/media/Coco-Sharp-Bold-trial.25d15e36a3de183bf02e.ttf",
     "static/media/dice_left.png": "/static/media/dice_left.67c95cb922dc057ae633.png",
     "static/media/topright.png": "/static/media/topright.1330c3c64f2a39d34ed2.png",
+    "static/media/Coco-Sharp-Extralight-trial.ttf": "/static/media/Coco-Sharp-Extralight-trial.3edf7f48ddd3114d16e4.ttf",
     "static/media/logo_ani.gif": "/static/media/logo_ani.840bd544ea2d115c67e9.gif",
+    "static/media/Coco-Sharp-Regular-trial.ttf": "/static/media/Coco-Sharp-Regular-trial.19690fbeed735394bbfc.ttf",
+    "static/media/Coco-Sharp-Light-trial.ttf": "/static/media/Coco-Sharp-Light-trial.50604aa56071d4437f92.ttf",
+    "static/media/darkbluebg.png": "/static/media/darkbluebg.fa9c7d1bf20cbd67a093.png",
     "static/media/aboutbottombg.png": "/static/media/aboutbottombg.53f5cd6a01b7bda1afeb.png",
     "static/media/portbg.png": "/static/media/portbg.43a3912b1de9cf6fc262.png",
     "static/media/dice_right.png": "/static/media/dice_right.c11b24cd61c7ab8aec58.png",
     "static/media/splash.png": "/static/media/splash.f8a85a281af3cac65aac.png",
     "static/media/spark_light.png": "/static/media/spark_light.af072d915545aba7510d.png",
     "static/media/megazoid.ttf": "/static/media/megazoid.050d71e38479361d292f.ttf",
+    "static/media/ClaireHandRegular.ttf": "/static/media/ClaireHandRegular.ad556c89ca087ca99213.ttf",
     "static/media/ProximaNova-Regular.otf": "/static/media/ProximaNova-Regular.ea03f826587148b7335d.otf",
     "static/media/PRISTINA.TTF": "/static/media/PRISTINA.13348710f949070c17f8.TTF",
+    "static/media/ClaireHandLight.ttf": "/static/media/ClaireHandLight.41a8e2cbf6c6d7a49d90.ttf",
     "static/media/PantonDemoLight.otf": "/static/media/PantonDemoLight.602ae56f65da8c004484.otf",
     "static/media/PantonDemoBlack.otf": "/static/media/PantonDemoBlack.aa32031e38ad5621ee48.otf",
     "static/media/tf2build.ttf": "/static/media/tf2build.78d4f8cd122c4bf71771.ttf",
@@ -40,6 +48,7 @@
     "static/media/ProximaNovaA-Bold.ttf": "/static/media/ProximaNovaA-Bold.ce048e95c906a0b63a5c.ttf",
     "static/media/storybg.png": "/static/media/storybg.aa10a445dc35e7d3827c.png",
     "static/media/topleft.png": "/static/media/topleft.11753a9dc5e3c5160893.png",
+    "static/media/darkblue.png": "/static/media/darkblue.18136ce36c29f61925ca.png",
     "static/media/Logo.png": "/static/media/Logo.5545ca498e62585f1f18.png",
     "static/media/ele.png": "/static/media/ele.2279209e508d6ae2eac7.png",
     "static/media/THEBOLDFONT-FREEVERSION.ttf": "/static/media/THEBOLDFONT-FREEVERSION.35d115dae50a893710a4.ttf",
@@ -49,12 +58,12 @@
     "static/media/Fontspring-DEMO-organetto-ultracndultrabold.otf": "/static/media/Fontspring-DEMO-organetto-ultracndultrabold.d239d91e5f45200452d6.otf",
     "static/media/greenstar.png": "/static/media/greenstar.9921fe81a36f7ce52e19.png",
     "index.html": "/index.html",
-    "main.5a55fb7d.css.map": "/static/css/main.5a55fb7d.css.map",
-    "main.7b16f1f7.js.map": "/static/js/main.7b16f1f7.js.map",
+    "main.5e23745a.css.map": "/static/css/main.5e23745a.css.map",
+    "main.11a1afe0.js.map": "/static/js/main.11a1afe0.js.map",
     "453.2c6ecf02.chunk.js.map": "/static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a55fb7d.css",
-    "static/js/main.7b16f1f7.js"
+    "static/css/main.5e23745a.css",
+    "static/js/main.11a1afe0.js"
   ]
 }
