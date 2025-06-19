@@ -53,6 +53,57 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "ClaireHand";
+  src: url("../src/assets/font/ClaireHandRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClaireHand";
+  src: url("../src/assets/font/ClaireHandLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../src/assets/font/Coco-Sharp-Regular-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../src/assets/font/Coco-Sharp-Bold-trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../src/assets/font/Coco-Sharp-Extrabold-trial.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../src/assets/font/Coco-Sharp-Extralight-trial.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../src/assets/font/Coco-Sharp-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "ProximaNova";
   src: url("../src//assets/font/ProximaNovaA-Bold.ttf") format("truetype");
   font-weight: 500;
@@ -173,4 +224,3 @@ body {
     transform: rotate(360deg);
   }
 }
-/* App.css */

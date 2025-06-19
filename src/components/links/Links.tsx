@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+
 import "./links.css";
 
 const variants = {
@@ -22,7 +23,11 @@ const itemVariants = {
   closed: { opacity: 0, y: 20 },
 };
 
-const Links = () => {
+const Links = ({
+  setOpen,
+}: {
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const items = [
     {
       heading: "Home",
@@ -31,10 +36,6 @@ const Links = () => {
     {
       heading: "About",
       href: "/about",
-    },
-    {
-      heading: "Work",
-      href: "/work",
     },
     {
       heading: "Portfolio",
@@ -48,10 +49,11 @@ const Links = () => {
 
   return (
     <motion.div className="links" variants={variants}>
-      {items.map((item) => (
-        <motion.div key={item} variants={itemVariants}>
+      {items.map((item, index) => (
+        <motion.div key={index} variants={itemVariants}>
           <NavLink
             to={item.href}
+            onClick={() => setOpen(false)}
             className={({ isActive }) =>
               `mob-menu-link ${isActive ? "active" : ""}`
             }

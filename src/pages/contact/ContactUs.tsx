@@ -10,9 +10,12 @@ const ContactUs = () => {
           <div className="contact-line"></div>
           <h2 className="contact-title">Build your next amazing animation</h2>
           <p className="contact-description">
-            We bring ideas to life through high-impact animation. From explainer videos to motion graphics, we craft visual stories that captivate, engage, and inspire. Whether you're a brand, startup, or creative agency — we animate your message with clarity and style.
+            We bring ideas to life through high-impact animation. From explainer
+            videos to motion graphics, we craft visual stories that captivate,
+            engage, and inspire. Whether you're a brand, startup, or creative
+            agency — we animate your message with clarity and style.
           </p>
-          <MagicButton classname="contact-btn" link="#">
+          <MagicButton classname="contact-btn" link="/contact">
             CONTACT NOW
           </MagicButton>
         </div>

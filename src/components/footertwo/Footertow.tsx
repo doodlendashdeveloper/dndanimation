@@ -101,7 +101,9 @@ const FooterTwo = ({ scrollToRef }) => {
                 </a>
               </li>
               <li className="footer-col__copy--inline">
-                <a href="/">info@dndanimations.com</a>
+                <a href="mailto:info@dndanimations.com">
+                  info@dndanimations.com
+                </a>
               </li>
               <li>
                 <a href="tel:7732196748">
@@ -147,16 +149,13 @@ const FooterTwo = ({ scrollToRef }) => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/">work</a>
-              </li>
-              <li>
                 <Link to="/about">about</Link>
               </li>
               <li>
                 <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
-                <a href="/">contact</a>
+                <Link to="/contact">contact</Link>
               </li>
             </ul>
           </div>
