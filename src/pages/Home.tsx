@@ -1,7 +1,7 @@
 // Home.tsx
 
 // import AnimationPage from "./AnimationPage/AnimationPage.tsx";
-import React, { useRef } from "react";
+import React from "react";
 import ContactUs from "./contact/ContactUs.tsx";
 // import Footer from "./footer/Footer.tsx";
 import Footertwo from "../components/footertwo/Footertow.tsx";
@@ -17,12 +17,12 @@ import Bannerfour from "../components/banners/bannerfour/Bannerfour.tsx";
 // import BannerThree from "../components/banners/banner-three/BannerThree.tsx";
 import IdeasToLife from "../components/ideas-to-life/IdeasToLife.tsx";
 import TopPic from "../components/toppic/TopPic.tsx";
-const Home = () => {
-  const headerRef = useRef(null);
+const Home = ({ headerRef }) => {
   return (
     <div>
       {/* <HomeTopSection image={Video} /> */}
-      <TopPic headerRef={headerRef} />
+
+      <TopPic />
       <Herosection />
       <Bannerfour />
       {/* <BannerTwo /> */}

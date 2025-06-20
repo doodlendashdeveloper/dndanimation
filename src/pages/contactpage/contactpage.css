@@ -214,11 +214,11 @@
   background-color: #94ff00;
   color: black;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 .con-form-section form button:hover {
   background-color: black;
   color: white;
-  transition: all 0.3s linear;
 }
 
 @media only screen and (max-width: 690px) {
@@ -270,20 +270,20 @@
     height: 8.5rem;
     margin-top: 4rem;
     padding-left: 4rem;
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 
   .con-form-section form textarea {
     height: 22.5rem;
     margin-top: 4rem;
     padding: 1rem 4rem;
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
   .con-form-section form button {
     width: 26rem;
     height: 8rem;
     margin-top: 3rem;
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
   form .status {
     margin: 0;

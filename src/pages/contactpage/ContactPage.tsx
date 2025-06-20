@@ -3,11 +3,10 @@ import darkbluebg from "../../assets/images/darkbluebg.png";
 import darkblue from "../../assets/images/darkblue.png";
 // import { FaEnvelope, FaMobile, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-
 import "./contactpage.css";
 import FooterTwo from "../../components/footertwo/Footertow.tsx";
 
-const ContactPage = () => {
+const ContactPage = ({ headerRef }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,7 +57,7 @@ const ContactPage = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       setForm({ name: "", email: "", message: "", phone: "" });
-      setStatus("An error occurred while submitting the message.");
+      setStatus("An error occurred while submitting the form.");
     }
   };
 
@@ -168,7 +167,21 @@ const ContactPage = () => {
                   onChange={handleChange}
                   required
                 />
-                <button type="submit">Submit</button>
+                <motion.button
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  whileTap={{
+                    scale: 0.9,
+                  }}
+                  transition={{
+                    duration: 0.01,
+                    ease: "easeOut",
+                  }}
+                  type="submit"
+                >
+                  Submit
+                </motion.button>
                 <p
                   className="status"
                   style={{
@@ -199,7 +212,7 @@ const ContactPage = () => {
           </div> */}
         </div>
       </div>
-      <FooterTwo />
+      <FooterTwo scrollToRef={headerRef} />
     </>
   );
 };
