@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e23745a.css",
-    "main.js": "/static/js/main.11a1afe0.js",
+    "main.css": "/static/css/main.c5740e63.css",
+    "main.js": "/static/js/main.8d75ad7a.js",
     "static/js/453.2c6ecf02.chunk.js": "/static/js/453.2c6ecf02.chunk.js",
     "static/media/portfoliovid.mp4": "/static/media/portfoliovid.8e6b718e0d4e52e1b4f3.mp4",
     "static/media/portfoliovidmobile.mp4": "/static/media/portfoliovidmobile.a22e85e0b25c220e789c.mp4",
@@ -27,6 +27,7 @@
     "static/media/aboutbottombg.png": "/static/media/aboutbottombg.53f5cd6a01b7bda1afeb.png",
     "static/media/portbg.png": "/static/media/portbg.43a3912b1de9cf6fc262.png",
     "static/media/dice_right.png": "/static/media/dice_right.c11b24cd61c7ab8aec58.png",
+    "static/media/contbg.png": "/static/media/contbg.9727c8f4fbb12a0b1d17.png",
     "static/media/splash.png": "/static/media/splash.f8a85a281af3cac65aac.png",
     "static/media/spark_light.png": "/static/media/spark_light.af072d915545aba7510d.png",
     "static/media/megazoid.ttf": "/static/media/megazoid.050d71e38479361d292f.ttf",
@@ -48,7 +49,7 @@
     "static/media/ProximaNovaA-Bold.ttf": "/static/media/ProximaNovaA-Bold.ce048e95c906a0b63a5c.ttf",
     "static/media/storybg.png": "/static/media/storybg.aa10a445dc35e7d3827c.png",
     "static/media/topleft.png": "/static/media/topleft.11753a9dc5e3c5160893.png",
-    "static/media/darkblue.png": "/static/media/darkblue.18136ce36c29f61925ca.png",
+    "static/media/darkblue.png": "/static/media/darkblue.4581070214f220e8bcad.png",
     "static/media/Logo.png": "/static/media/Logo.5545ca498e62585f1f18.png",
     "static/media/ele.png": "/static/media/ele.2279209e508d6ae2eac7.png",
     "static/media/THEBOLDFONT-FREEVERSION.ttf": "/static/media/THEBOLDFONT-FREEVERSION.35d115dae50a893710a4.ttf",
@@ -58,12 +59,12 @@
     "static/media/Fontspring-DEMO-organetto-ultracndultrabold.otf": "/static/media/Fontspring-DEMO-organetto-ultracndultrabold.d239d91e5f45200452d6.otf",
     "static/media/greenstar.png": "/static/media/greenstar.9921fe81a36f7ce52e19.png",
     "index.html": "/index.html",
-    "main.5e23745a.css.map": "/static/css/main.5e23745a.css.map",
-    "main.11a1afe0.js.map": "/static/js/main.11a1afe0.js.map",
+    "main.c5740e63.css.map": "/static/css/main.c5740e63.css.map",
+    "main.8d75ad7a.js.map": "/static/js/main.8d75ad7a.js.map",
     "453.2c6ecf02.chunk.js.map": "/static/js/453.2c6ecf02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e23745a.css",
-    "static/js/main.11a1afe0.js"
+    "static/css/main.c5740e63.css",
+    "static/js/main.8d75ad7a.js"
   ]
 }
