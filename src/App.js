@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +15,7 @@ import "./App.css";
 import PortfolioPage from "./pages/portfolio/Portfoliopage.tsx";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop.tsx";
 import ContactPage from "./pages/contactpage/ContactPage.tsx";
+import Btt from "./components/Btt.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,9 +75,8 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = ({ headerRef }) => {
   const location = useLocation();
-
   return (
     <div className="page-container">
       <AnimatePresence mode="sync" initial={false}>
@@ -85,7 +85,7 @@ const AnimatedRoutes = () => {
             path="/"
             element={
               <PageWrapper>
-                <Home />
+                <Home headerRef={headerRef} />
               </PageWrapper>
             }
           />
@@ -93,7 +93,7 @@ const AnimatedRoutes = () => {
             path="/about"
             element={
               <PageWrapper>
-                <AboutUs />
+                <AboutUs headerRef={headerRef} />
               </PageWrapper>
             }
           />
@@ -101,7 +101,7 @@ const AnimatedRoutes = () => {
             path="/portfolio"
             element={
               <PageWrapper>
-                <PortfolioPage />
+                <PortfolioPage headerRef={headerRef} />
               </PageWrapper>
             }
           />
@@ -109,7 +109,7 @@ const AnimatedRoutes = () => {
             path="/contact"
             element={
               <PageWrapper>
-                <ContactPage />
+                <ContactPage headerRef={headerRef} />
               </PageWrapper>
             }
           />
@@ -120,11 +120,14 @@ const AnimatedRoutes = () => {
 };
 
 const App = () => {
+  const headerRef = useRef(null);
+
   return (
     <Router basename="/">
       <ScrollToTop />
+      <Btt headerRef={headerRef} />
       <Navbar />
-      <AnimatedRoutes />
+      <AnimatedRoutes headerRef={headerRef} />
     </Router>
   );
 };
