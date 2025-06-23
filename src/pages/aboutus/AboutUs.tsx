@@ -12,7 +12,7 @@ import yellowstar from "../../assets/images/yellowstar.png";
 import { motion } from "framer-motion";
 import "./aboutus.css";
 
-const AboutUs = () => {
+const AboutUs = ({ headerRef }) => {
   return (
     <>
       {/* <div className="about-page">
@@ -66,7 +66,7 @@ const AboutUs = () => {
           </div>
           <div className="pixel-party">
             <h1>
-              where pixels party, ideas dance,
+              Where pixels party, ideas dance,
               <br /> and imagination never hits pause.
             </h1>
             <p>
@@ -84,7 +84,7 @@ const AboutUs = () => {
               goal: make boring things awesome. Whether it's a product pitch or
               a cartoon unicorn battle (yes, we've done that)
               <br />
-              <br /> we bring serious energy to every frame.
+              <br /> We bring serious energy to every frame.
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footertwo />
+      <Footertwo scrollToRef={headerRef} />
     </>
   );
 };

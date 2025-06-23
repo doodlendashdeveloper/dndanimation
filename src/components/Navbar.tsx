@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
             >
               {({ isActive }) => (
                 <>
-                  <span>/ </span>
+                  <span className="slash">/</span>
                   {isActive && <ActiveIndicator />}
                   {item.label}
                 </>

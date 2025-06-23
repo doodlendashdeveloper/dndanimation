@@ -314,6 +314,9 @@ h1 sup {
     line-height: 32rem;
     letter-spacing: -5px;
   }
+  .contact-us .tel-btn a {
+    font-size: 3.3rem;
+  }
   .lets-talk-txt .s {
     transform: translate(25px);
   }

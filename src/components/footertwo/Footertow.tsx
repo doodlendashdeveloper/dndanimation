@@ -83,9 +83,6 @@ const FooterTwo = ({ scrollToRef }) => {
           <div className="findus footer-col__copy--inline">
             <ul>
               <li>
-                <p>/</p>
-              </li>
-              <li>
                 <p>
                   <span>find us</span>
                 </p>
@@ -115,31 +112,40 @@ const FooterTwo = ({ scrollToRef }) => {
           <div className="socials footer-col__copy--inline">
             <ul>
               <li>
-                <p>/</p>
-              </li>
-              <li>
                 <p>
                   <span>socials</span>
                 </p>
               </li>
 
               <li>
-                <a href="/">instagram</a>
+                <a
+                  target="blank_"
+                  href="https://www.instagram.com/thedoodlendash/?igsh=cXRmNHBhcGViaHhp#"
+                >
+                  instagram
+                </a>
               </li>
 
               <li>
-                <a href="/">facebook</a>
+                <a
+                  target="blank_"
+                  href="https://www.facebook.com/DoodleNDash/?rdid=j19tBhG0CH1pYrK1"
+                >
+                  facebook
+                </a>
               </li>
               <li>
-                <a href="/">linkedin</a>
+                <a
+                  target="blank_"
+                  href="https://www.linkedin.com/in/doodle-n-dash-847517324"
+                >
+                  linkedin
+                </a>
               </li>
             </ul>
           </div>
           <div className="nav-links footer-col__copy--inline">
             <ul>
-              <li>
-                <p>/</p>
-              </li>
               <li>
                 <p>
                   <span>nav</span>

@@ -3,9 +3,9 @@ import toppic from "../../assets/images/toppic.jpg";
 import toptext from "../../assets/images/toptext.png";
 import "./topic.css";
 
-const TopPic = ({ headerRef }) => {
+const TopPic = () => {
   return (
-    <div className="toppic" ref={headerRef}>
+    <div className="toppic">
       <img className="topimg" src={toppic} alt="" />
       <div className="top-text">
         <img src={toptext} alt="" />
